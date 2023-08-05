@@ -4,7 +4,8 @@ This is an experimental hack I used to push pixels (or dots, rather) to a 14x28 
 
 I have no immediate plans to continue work on this project or make it "production ready", this repo is just to share some hacks in case it helps curious minds.
 
-![flip_dots_looping](https://github.com/twstokes/flipdots-ios/assets/2092798/ce338e92-f968-4ad5-8094-9924930afcae)
+![image](https://github.com/twstokes/flipdots-ios/assets/2092798/6b3547cc-438a-45a7-98eb-b8f2eb29a6b8)
+
 
 **Some routines it can run:**
 - Freehand drawing
@@ -19,6 +20,7 @@ I have no immediate plans to continue work on this project or make it "productio
 **Other features:**
 - Dot inversion mode
 - Changing framerate of routines
+- Play / pause routines
 - Enabling and disabling the network connection
 
 It's best to run on an iPad or Mac, but can also run on iPhone.
