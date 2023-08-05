@@ -1,0 +1,3 @@
+[submodule "Shared/lib/Adafruit-GFX-Library"]
+	path = Shared/lib/Adafruit-GFX-Library
+	url = https://github.com/adafruit/Adafruit-GFX-Library

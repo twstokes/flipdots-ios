@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "openaiswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/twstokes/OpenAISwift.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "99fcbc1a17b3d0e220566a4c1ef220aa2aa4310c"
+      }
+    }
+  ],
+  "version" : 2
+}

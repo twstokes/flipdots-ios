@@ -1,0 +1,4 @@
+github "twstokes/swift-gfx-wrapper"
+
+# used to run locally
+#git "file:///Users/tanner/dev/swift-gfx-wrapper" "updates"

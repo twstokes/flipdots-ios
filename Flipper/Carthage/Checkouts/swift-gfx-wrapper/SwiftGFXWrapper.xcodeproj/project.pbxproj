@@ -1,0 +1,1520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C300812B25ABD39700A0D938 /* VirtualDotMatrix.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C3AD447325A264200079D69E /* VirtualDotMatrix.hpp */; };
+		C310515625A2596B00D2B5E8 /* SwiftGFXWrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C310514C25A2596B00D2B5E8 /* SwiftGFXWrapper.framework */; };
+		C310515B25A2596B00D2B5E8 /* SwiftGFXWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C310515A25A2596B00D2B5E8 /* SwiftGFXWrapperTests.swift */; };
+		C310515D25A2596B00D2B5E8 /* SwiftGFXWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = C310514F25A2596B00D2B5E8 /* SwiftGFXWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C310517025A25A0700D2B5E8 /* VirtualDotMatrixWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = C310516E25A25A0700D2B5E8 /* VirtualDotMatrixWrapper.mm */; };
+		C310517125A25A0700D2B5E8 /* VirtualDotMatrixWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = C310516F25A25A0700D2B5E8 /* VirtualDotMatrixWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3456FF425A27BE700618271 /* VirtualDotMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3AD447425A264200079D69E /* VirtualDotMatrix.cpp */; };
+		C3456FF725A27BED00618271 /* Print.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3AD446F25A2641D0079D69E /* Print.cpp */; };
+		C3456FF825A27BED00618271 /* Printable.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD447025A2641D0079D69E /* Printable.h */; };
+		C3456FF925A27BED00618271 /* Print.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD447125A2641D0079D69E /* Print.h */; };
+		C3456FFA25A27BED00618271 /* WString.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446E25A2641D0079D69E /* WString.h */; };
+		C3456FFD25A27BFB00618271 /* gfxfont.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD443025A2641A0079D69E /* gfxfont.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3456FFE25A27BFB00618271 /* glcdfont.c in Sources */ = {isa = PBXBuildFile; fileRef = C3AD443425A2641A0079D69E /* glcdfont.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		C3456FFF25A27BFB00618271 /* Adafruit_GFX.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD443125A2641A0079D69E /* Adafruit_GFX.h */; };
+		C345700025A27BFB00618271 /* Adafruit_GFX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3AD443525A2641A0079D69E /* Adafruit_GFX.cpp */; };
+		C345700325A27C0700618271 /* FreeMonoOblique24pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445D25A2641A0079D69E /* FreeMonoOblique24pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345700425A27C0700618271 /* FreeSerifBoldItalic18pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446225A2641A0079D69E /* FreeSerifBoldItalic18pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345700525A27C0700618271 /* FreeMonoOblique18pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446725A2641A0079D69E /* FreeMonoOblique18pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345700625A27C0700618271 /* FreeSerifBold24pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446825A2641A0079D69E /* FreeSerifBold24pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345700725A27C0700618271 /* FreeMonoBold9pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444525A2641A0079D69E /* FreeMonoBold9pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345700825A27C0700618271 /* FreeMonoBold12pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445025A2641A0079D69E /* FreeMonoBold12pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345700925A27C0700618271 /* FreeMono18pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD443E25A2641A0079D69E /* FreeMono18pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345700A25A27C0700618271 /* FreeMonoBold24pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446A25A2641A0079D69E /* FreeMonoBold24pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345700B25A27C0700618271 /* FreeSerif9pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445F25A2641A0079D69E /* FreeSerif9pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345700C25A27C0700618271 /* FreeSansBoldOblique12pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446025A2641A0079D69E /* FreeSansBoldOblique12pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345700D25A27C0700618271 /* FreeSansBold18pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD443F25A2641A0079D69E /* FreeSansBold18pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345700E25A27C0700618271 /* TomThumb.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444B25A2641A0079D69E /* TomThumb.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345700F25A27C0700618271 /* FreeSansBold9pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444225A2641A0079D69E /* FreeSansBold9pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345701025A27C0700618271 /* FreeSerifBold9pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444A25A2641A0079D69E /* FreeSerifBold9pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345701125A27C0700618271 /* FreeSans24pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445C25A2641A0079D69E /* FreeSans24pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345701225A27C0700618271 /* FreeMonoBoldOblique12pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD443A25A2641A0079D69E /* FreeMonoBoldOblique12pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345701325A27C0700618271 /* FreeSansBoldOblique18pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD443B25A2641A0079D69E /* FreeSansBoldOblique18pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345701425A27C0700618271 /* FreeSansOblique24pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444025A2641A0079D69E /* FreeSansOblique24pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345701525A27C0700618271 /* FreeMonoBoldOblique18pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446325A2641A0079D69E /* FreeMonoBoldOblique18pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345701625A27C0700618271 /* FreeSerifItalic18pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445E25A2641A0079D69E /* FreeSerifItalic18pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345701725A27C0700618271 /* FreeMonoBoldOblique9pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445725A2641A0079D69E /* FreeMonoBoldOblique9pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345701825A27C0700618271 /* FreeSans18pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446625A2641A0079D69E /* FreeSans18pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345701925A27C0700618271 /* FreeSerifBoldItalic9pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445325A2641A0079D69E /* FreeSerifBoldItalic9pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345701A25A27C0700618271 /* FreeSans9pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444C25A2641A0079D69E /* FreeSans9pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345701B25A27C0700618271 /* Tiny3x3a2pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446525A2641A0079D69E /* Tiny3x3a2pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345701C25A27C0700618271 /* FreeSans12pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444325A2641A0079D69E /* FreeSans12pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345701D25A27C0700618271 /* FreeSansBold12pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446925A2641A0079D69E /* FreeSansBold12pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345701E25A27C0700618271 /* FreeMono24pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444D25A2641A0079D69E /* FreeMono24pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345701F25A27C0700618271 /* Picopixel.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD443C25A2641A0079D69E /* Picopixel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345702025A27C0700618271 /* FreeMonoOblique12pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444125A2641A0079D69E /* FreeMonoOblique12pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345702125A27C0700618271 /* FreeSansOblique12pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445A25A2641A0079D69E /* FreeSansOblique12pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345702225A27C0700618271 /* FreeSerifBoldItalic24pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445225A2641A0079D69E /* FreeSerifBoldItalic24pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345702325A27C0700618271 /* FreeSerifBold18pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445925A2641A0079D69E /* FreeSerifBold18pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345702425A27C0700618271 /* FreeMonoBold18pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445B25A2641A0079D69E /* FreeMonoBold18pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345702525A27C0700618271 /* FreeSansOblique9pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444425A2641A0079D69E /* FreeSansOblique9pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345702625A27C0700618271 /* FreeSansBoldOblique24pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444725A2641A0079D69E /* FreeSansBoldOblique24pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345702725A27C0700618271 /* FreeSansBold24pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444E25A2641A0079D69E /* FreeSansBold24pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345702825A27C0700618271 /* FreeSerifBoldItalic12pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD443925A2641A0079D69E /* FreeSerifBoldItalic12pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345702925A27C0700618271 /* FreeSerif12pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444625A2641A0079D69E /* FreeSerif12pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345702A25A27C0700618271 /* FreeSerifItalic9pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444925A2641A0079D69E /* FreeSerifItalic9pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345702B25A27C0700618271 /* FreeSerifBold12pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444F25A2641A0079D69E /* FreeSerifBold12pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345702C25A27C0700618271 /* FreeSansOblique18pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445125A2641A0079D69E /* FreeSansOblique18pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345702D25A27C0700618271 /* FreeSansBoldOblique9pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445525A2641A0079D69E /* FreeSansBoldOblique9pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345702E25A27C0700618271 /* FreeSerif18pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445825A2641A0079D69E /* FreeSerif18pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345702F25A27C0700618271 /* FreeSerifItalic12pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD443D25A2641A0079D69E /* FreeSerifItalic12pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345703025A27C0700618271 /* FreeSerif24pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446125A2641A0079D69E /* FreeSerif24pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345703125A27C0700618271 /* FreeMono12pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446C25A2641A0079D69E /* FreeMono12pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345703225A27C0700618271 /* FreeMonoOblique9pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444825A2641A0079D69E /* FreeMonoOblique9pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345703325A27C0700618271 /* FreeSerifItalic24pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445625A2641A0079D69E /* FreeSerifItalic24pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345703425A27C0700618271 /* FreeMono9pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446B25A2641A0079D69E /* FreeMono9pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345703525A27C0700618271 /* FreeMonoBoldOblique24pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445425A2641A0079D69E /* FreeMonoBoldOblique24pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C345703625A27C0700618271 /* Org_01.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446425A2641A0079D69E /* Org_01.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C36EBE3425FEF06C0047C6F7 /* UIColor+Colorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36EBE2A25FEF06C0047C6F7 /* UIColor+Colorable.swift */; };
+		C36EBE3525FEF06C0047C6F7 /* UIColor+Colorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36EBE2A25FEF06C0047C6F7 /* UIColor+Colorable.swift */; };
+		C36EBE3625FEF06C0047C6F7 /* UIColor+Colorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36EBE2A25FEF06C0047C6F7 /* UIColor+Colorable.swift */; };
+		C36EBE3725FEF06C0047C6F7 /* Color+Colorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36EBE2B25FEF06C0047C6F7 /* Color+Colorable.swift */; };
+		C36EBE3825FEF06C0047C6F7 /* Color+Colorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36EBE2B25FEF06C0047C6F7 /* Color+Colorable.swift */; };
+		C36EBE3925FEF06C0047C6F7 /* Color+Colorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36EBE2B25FEF06C0047C6F7 /* Color+Colorable.swift */; };
+		C36EBE3A25FEF06C0047C6F7 /* Bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36EBE2D25FEF06C0047C6F7 /* Bridge.swift */; };
+		C36EBE3B25FEF06C0047C6F7 /* Bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36EBE2D25FEF06C0047C6F7 /* Bridge.swift */; };
+		C36EBE3C25FEF06C0047C6F7 /* Bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36EBE2D25FEF06C0047C6F7 /* Bridge.swift */; };
+		C36EBE3D25FEF06C0047C6F7 /* GFXFrameDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36EBE2F25FEF06C0047C6F7 /* GFXFrameDriver.swift */; };
+		C36EBE3E25FEF06C0047C6F7 /* GFXFrameDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36EBE2F25FEF06C0047C6F7 /* GFXFrameDriver.swift */; };
+		C36EBE3F25FEF06C0047C6F7 /* GFXFrameDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36EBE2F25FEF06C0047C6F7 /* GFXFrameDriver.swift */; };
+		C36EBE4025FEF06C0047C6F7 /* DisplayLinkDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36EBE3025FEF06C0047C6F7 /* DisplayLinkDriver.swift */; };
+		C36EBE4125FEF06C0047C6F7 /* DisplayLinkDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36EBE3025FEF06C0047C6F7 /* DisplayLinkDriver.swift */; };
+		C36EBE4225FEF06C0047C6F7 /* DisplayLinkDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36EBE3025FEF06C0047C6F7 /* DisplayLinkDriver.swift */; };
+		C36EBE4325FEF06C0047C6F7 /* GFXMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36EBE3125FEF06C0047C6F7 /* GFXMatrix.swift */; };
+		C36EBE4425FEF06C0047C6F7 /* GFXMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36EBE3125FEF06C0047C6F7 /* GFXMatrix.swift */; };
+		C36EBE4525FEF06C0047C6F7 /* GFXMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36EBE3125FEF06C0047C6F7 /* GFXMatrix.swift */; };
+		C36EBE4925FEF06C0047C6F7 /* Colorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36EBE3325FEF06C0047C6F7 /* Colorable.swift */; };
+		C36EBE4A25FEF06C0047C6F7 /* Colorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36EBE3325FEF06C0047C6F7 /* Colorable.swift */; };
+		C36EBE4B25FEF06C0047C6F7 /* Colorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36EBE3325FEF06C0047C6F7 /* Colorable.swift */; };
+		C37A751225EAD87F008F249E /* SwiftGFXWrapperWatchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = C37A751025EAD87F008F249E /* SwiftGFXWrapperWatchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A752025EAD898008F249E /* VirtualDotMatrixWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = C310516F25A25A0700D2B5E8 /* VirtualDotMatrixWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A752825EAD8A2008F249E /* VirtualDotMatrix.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C3AD447325A264200079D69E /* VirtualDotMatrix.hpp */; };
+		C37A752C25EAD8A5008F249E /* VirtualDotMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3AD447425A264200079D69E /* VirtualDotMatrix.cpp */; };
+		C37A753025EAD8A9008F249E /* Printable.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD447025A2641D0079D69E /* Printable.h */; };
+		C37A753125EAD8A9008F249E /* Print.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD447125A2641D0079D69E /* Print.h */; };
+		C37A753225EAD8A9008F249E /* WString.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446E25A2641D0079D69E /* WString.h */; };
+		C37A753325EAD8A9008F249E /* Print.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3AD446F25A2641D0079D69E /* Print.cpp */; };
+		C37A753925EAD8B7008F249E /* glcdfont.c in Sources */ = {isa = PBXBuildFile; fileRef = C3AD443425A2641A0079D69E /* glcdfont.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		C37A753B25EAD8B7008F249E /* Adafruit_GFX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3AD443525A2641A0079D69E /* Adafruit_GFX.cpp */; };
+		C37A753C25EAD8B7008F249E /* Adafruit_GFX.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD443125A2641A0079D69E /* Adafruit_GFX.h */; };
+		C37A753D25EAD8B7008F249E /* gfxfont.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD443025A2641A0079D69E /* gfxfont.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A754E25EAD8D2008F249E /* Tiny3x3a2pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446525A2641A0079D69E /* Tiny3x3a2pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A754F25EAD8D2008F249E /* FreeSansBold9pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444225A2641A0079D69E /* FreeSansBold9pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A755025EAD8D2008F249E /* FreeSerif12pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444625A2641A0079D69E /* FreeSerif12pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A755125EAD8D2008F249E /* FreeSansOblique18pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445125A2641A0079D69E /* FreeSansOblique18pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A755225EAD8D2008F249E /* FreeSerifBold12pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444F25A2641A0079D69E /* FreeSerifBold12pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A755325EAD8D2008F249E /* FreeSerif9pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445F25A2641A0079D69E /* FreeSerif9pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A755425EAD8D2008F249E /* FreeMonoOblique18pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446725A2641A0079D69E /* FreeMonoOblique18pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A755525EAD8D2008F249E /* FreeSansOblique12pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445A25A2641A0079D69E /* FreeSansOblique12pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A755625EAD8D2008F249E /* Org_01.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446425A2641A0079D69E /* Org_01.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A755725EAD8D2008F249E /* FreeMonoBoldOblique24pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445425A2641A0079D69E /* FreeMonoBoldOblique24pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A755825EAD8D2008F249E /* FreeSans12pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444325A2641A0079D69E /* FreeSans12pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A755925EAD8D2008F249E /* TomThumb.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444B25A2641A0079D69E /* TomThumb.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A755A25EAD8D2008F249E /* FreeMonoBold9pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444525A2641A0079D69E /* FreeMonoBold9pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A755B25EAD8D2008F249E /* FreeSerifBoldItalic12pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD443925A2641A0079D69E /* FreeSerifBoldItalic12pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A755C25EAD8D2008F249E /* FreeSansBold24pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444E25A2641A0079D69E /* FreeSansBold24pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A755D25EAD8D2008F249E /* FreeSansBoldOblique24pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444725A2641A0079D69E /* FreeSansBoldOblique24pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A755E25EAD8D2008F249E /* FreeSerif18pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445825A2641A0079D69E /* FreeSerif18pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A755F25EAD8D2008F249E /* FreeSansBold12pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446925A2641A0079D69E /* FreeSansBold12pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A756025EAD8D2008F249E /* FreeSansBoldOblique9pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445525A2641A0079D69E /* FreeSansBoldOblique9pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A756125EAD8D2008F249E /* FreeSansBoldOblique12pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446025A2641A0079D69E /* FreeSansBoldOblique12pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A756225EAD8D2008F249E /* FreeSerifBold9pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444A25A2641A0079D69E /* FreeSerifBold9pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A756325EAD8D2008F249E /* FreeSerifBoldItalic18pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446225A2641A0079D69E /* FreeSerifBoldItalic18pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A756425EAD8D2008F249E /* FreeMonoOblique12pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444125A2641A0079D69E /* FreeMonoOblique12pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A756525EAD8D2008F249E /* FreeMonoBold12pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445025A2641A0079D69E /* FreeMonoBold12pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A756625EAD8D2008F249E /* FreeMono12pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446C25A2641A0079D69E /* FreeMono12pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A756725EAD8D2008F249E /* FreeMonoBoldOblique9pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445725A2641A0079D69E /* FreeMonoBoldOblique9pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A756825EAD8D2008F249E /* FreeSerifBold18pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445925A2641A0079D69E /* FreeSerifBold18pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A756925EAD8D2008F249E /* FreeMono24pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444D25A2641A0079D69E /* FreeMono24pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A756A25EAD8D2008F249E /* FreeMonoBoldOblique12pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD443A25A2641A0079D69E /* FreeMonoBoldOblique12pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A756B25EAD8D2008F249E /* FreeMonoOblique9pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444825A2641A0079D69E /* FreeMonoOblique9pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A756C25EAD8D2008F249E /* FreeSansOblique24pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444025A2641A0079D69E /* FreeSansOblique24pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A756D25EAD8D2008F249E /* FreeSans18pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446625A2641A0079D69E /* FreeSans18pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A756E25EAD8D2008F249E /* FreeSerifBoldItalic24pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445225A2641A0079D69E /* FreeSerifBoldItalic24pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A756F25EAD8D2008F249E /* FreeMonoBold18pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445B25A2641A0079D69E /* FreeMonoBold18pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A757025EAD8D2008F249E /* FreeSansOblique9pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444425A2641A0079D69E /* FreeSansOblique9pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A757125EAD8D2008F249E /* FreeMonoBold24pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446A25A2641A0079D69E /* FreeMonoBold24pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A757225EAD8D2008F249E /* FreeMonoOblique24pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445D25A2641A0079D69E /* FreeMonoOblique24pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A757325EAD8D2008F249E /* FreeMono18pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD443E25A2641A0079D69E /* FreeMono18pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A757425EAD8D2008F249E /* FreeSerifItalic12pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD443D25A2641A0079D69E /* FreeSerifItalic12pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A757525EAD8D2008F249E /* FreeSerifItalic18pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445E25A2641A0079D69E /* FreeSerifItalic18pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A757625EAD8D2008F249E /* FreeSerifItalic9pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444925A2641A0079D69E /* FreeSerifItalic9pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A757725EAD8D2008F249E /* FreeSerifItalic24pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445625A2641A0079D69E /* FreeSerifItalic24pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A757825EAD8D2008F249E /* FreeSerif24pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446125A2641A0079D69E /* FreeSerif24pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A757925EAD8D2008F249E /* FreeSans9pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444C25A2641A0079D69E /* FreeSans9pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A757A25EAD8D2008F249E /* FreeSansBold18pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD443F25A2641A0079D69E /* FreeSansBold18pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A757B25EAD8D2008F249E /* FreeSerifBold24pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446825A2641A0079D69E /* FreeSerifBold24pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A757C25EAD8D2008F249E /* FreeMono9pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446B25A2641A0079D69E /* FreeMono9pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A757D25EAD8D2008F249E /* FreeSansBoldOblique18pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD443B25A2641A0079D69E /* FreeSansBoldOblique18pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A757E25EAD8D2008F249E /* FreeMonoBoldOblique18pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446325A2641A0079D69E /* FreeMonoBoldOblique18pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A757F25EAD8D2008F249E /* Picopixel.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD443C25A2641A0079D69E /* Picopixel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A758025EAD8D2008F249E /* FreeSans24pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445C25A2641A0079D69E /* FreeSans24pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A758125EAD8D2008F249E /* FreeSerifBoldItalic9pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445325A2641A0079D69E /* FreeSerifBoldItalic9pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37A759325EAD9A6008F249E /* VirtualDotMatrixWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = C310516E25A25A0700D2B5E8 /* VirtualDotMatrixWrapper.mm */; };
+		C39F748425EC0FD700B9EACA /* SwiftGFXWrapperMacOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39F747B25EC0FD700B9EACA /* SwiftGFXWrapperMacOS.framework */; };
+		C39F748925EC0FD700B9EACA /* SwiftGFXWrapperMacOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39F748825EC0FD700B9EACA /* SwiftGFXWrapperMacOSTests.swift */; };
+		C39F748B25EC0FD700B9EACA /* SwiftGFXWrapperMacOS.h in Headers */ = {isa = PBXBuildFile; fileRef = C39F747D25EC0FD700B9EACA /* SwiftGFXWrapperMacOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F750725EC11AD00B9EACA /* VirtualDotMatrixWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = C310516F25A25A0700D2B5E8 /* VirtualDotMatrixWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F751225EC11B500B9EACA /* VirtualDotMatrixWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = C310516E25A25A0700D2B5E8 /* VirtualDotMatrixWrapper.mm */; };
+		C39F751825EC11BF00B9EACA /* VirtualDotMatrix.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C3AD447325A264200079D69E /* VirtualDotMatrix.hpp */; };
+		C39F751E25EC11C300B9EACA /* VirtualDotMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3AD447425A264200079D69E /* VirtualDotMatrix.cpp */; };
+		C39F752425EC11C700B9EACA /* WString.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446E25A2641D0079D69E /* WString.h */; };
+		C39F752A25EC11CC00B9EACA /* Print.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3AD446F25A2641D0079D69E /* Print.cpp */; };
+		C39F753025EC11CF00B9EACA /* Printable.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD447025A2641D0079D69E /* Printable.h */; };
+		C39F753625EC11D200B9EACA /* Print.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD447125A2641D0079D69E /* Print.h */; };
+		C39F753C25EC11D800B9EACA /* gfxfont.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD443025A2641A0079D69E /* gfxfont.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F754725EC11DE00B9EACA /* Adafruit_GFX.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD443125A2641A0079D69E /* Adafruit_GFX.h */; };
+		C39F754D25EC11E400B9EACA /* glcdfont.c in Sources */ = {isa = PBXBuildFile; fileRef = C3AD443425A2641A0079D69E /* glcdfont.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		C39F755325EC11E800B9EACA /* Adafruit_GFX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3AD443525A2641A0079D69E /* Adafruit_GFX.cpp */; };
+		C39F755925EC11ED00B9EACA /* FreeMonoBoldOblique24pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445425A2641A0079D69E /* FreeMonoBoldOblique24pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F755A25EC11ED00B9EACA /* FreeSansOblique18pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445125A2641A0079D69E /* FreeSansOblique18pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F755B25EC11ED00B9EACA /* FreeMonoBold18pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445B25A2641A0079D69E /* FreeMonoBold18pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F755C25EC11ED00B9EACA /* FreeSerifBoldItalic9pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445325A2641A0079D69E /* FreeSerifBoldItalic9pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F755D25EC11ED00B9EACA /* Tiny3x3a2pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446525A2641A0079D69E /* Tiny3x3a2pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F755E25EC11ED00B9EACA /* FreeMono12pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446C25A2641A0079D69E /* FreeMono12pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F755F25EC11ED00B9EACA /* FreeSans12pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444325A2641A0079D69E /* FreeSans12pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F756025EC11ED00B9EACA /* FreeSansBoldOblique9pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445525A2641A0079D69E /* FreeSansBoldOblique9pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F756125EC11ED00B9EACA /* FreeSerifBold12pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444F25A2641A0079D69E /* FreeSerifBold12pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F756225EC11ED00B9EACA /* FreeSerifBoldItalic12pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD443925A2641A0079D69E /* FreeSerifBoldItalic12pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F756325EC11ED00B9EACA /* FreeSansOblique9pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444425A2641A0079D69E /* FreeSansOblique9pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F756425EC11ED00B9EACA /* FreeMonoBold12pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445025A2641A0079D69E /* FreeMonoBold12pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F756525EC11ED00B9EACA /* FreeSerifBold24pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446825A2641A0079D69E /* FreeSerifBold24pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F756625EC11ED00B9EACA /* FreeMono9pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446B25A2641A0079D69E /* FreeMono9pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F756725EC11ED00B9EACA /* FreeSerifItalic24pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445625A2641A0079D69E /* FreeSerifItalic24pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F756825EC11ED00B9EACA /* FreeMonoOblique9pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444825A2641A0079D69E /* FreeMonoOblique9pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F756925EC11ED00B9EACA /* FreeMonoOblique12pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444125A2641A0079D69E /* FreeMonoOblique12pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F756A25EC11ED00B9EACA /* FreeMonoOblique18pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446725A2641A0079D69E /* FreeMonoOblique18pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F756B25EC11ED00B9EACA /* FreeMonoBold24pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446A25A2641A0079D69E /* FreeMonoBold24pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F756C25EC11ED00B9EACA /* FreeSerif18pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445825A2641A0079D69E /* FreeSerif18pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F756D25EC11ED00B9EACA /* FreeSansBold12pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446925A2641A0079D69E /* FreeSansBold12pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F756E25EC11ED00B9EACA /* FreeMono18pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD443E25A2641A0079D69E /* FreeMono18pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F756F25EC11ED00B9EACA /* FreeSerifBold9pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444A25A2641A0079D69E /* FreeSerifBold9pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F757025EC11ED00B9EACA /* FreeSansBoldOblique18pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD443B25A2641A0079D69E /* FreeSansBoldOblique18pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F757125EC11ED00B9EACA /* Picopixel.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD443C25A2641A0079D69E /* Picopixel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F757225EC11ED00B9EACA /* FreeSansBold24pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444E25A2641A0079D69E /* FreeSansBold24pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F757325EC11ED00B9EACA /* FreeSans24pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445C25A2641A0079D69E /* FreeSans24pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F757425EC11ED00B9EACA /* FreeMonoBold9pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444525A2641A0079D69E /* FreeMonoBold9pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F757525EC11ED00B9EACA /* FreeSansBoldOblique12pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446025A2641A0079D69E /* FreeSansBoldOblique12pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F757625EC11ED00B9EACA /* FreeSerifBoldItalic18pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446225A2641A0079D69E /* FreeSerifBoldItalic18pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F757725EC11ED00B9EACA /* FreeMonoBoldOblique9pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445725A2641A0079D69E /* FreeMonoBoldOblique9pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F757825EC11ED00B9EACA /* FreeMonoOblique24pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445D25A2641A0079D69E /* FreeMonoOblique24pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F757925EC11ED00B9EACA /* FreeSans9pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444C25A2641A0079D69E /* FreeSans9pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F757A25EC11ED00B9EACA /* FreeSerifBold18pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445925A2641A0079D69E /* FreeSerifBold18pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F757B25EC11ED00B9EACA /* Org_01.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446425A2641A0079D69E /* Org_01.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F757C25EC11ED00B9EACA /* FreeMonoBoldOblique18pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446325A2641A0079D69E /* FreeMonoBoldOblique18pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F757D25EC11ED00B9EACA /* FreeSansBold9pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444225A2641A0079D69E /* FreeSansBold9pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F757E25EC11ED00B9EACA /* FreeSansBold18pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD443F25A2641A0079D69E /* FreeSansBold18pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F757F25EC11ED00B9EACA /* FreeSerif9pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445F25A2641A0079D69E /* FreeSerif9pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F758025EC11ED00B9EACA /* FreeSansBoldOblique24pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444725A2641A0079D69E /* FreeSansBoldOblique24pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F758125EC11ED00B9EACA /* FreeMonoBoldOblique12pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD443A25A2641A0079D69E /* FreeMonoBoldOblique12pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F758225EC11ED00B9EACA /* FreeSerif24pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446125A2641A0079D69E /* FreeSerif24pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F758325EC11EE00B9EACA /* FreeSerif12pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444625A2641A0079D69E /* FreeSerif12pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F758425EC11EE00B9EACA /* FreeSansOblique12pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445A25A2641A0079D69E /* FreeSansOblique12pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F758525EC11EE00B9EACA /* FreeSans18pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD446625A2641A0079D69E /* FreeSans18pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F758625EC11EE00B9EACA /* TomThumb.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444B25A2641A0079D69E /* TomThumb.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F758725EC11EE00B9EACA /* FreeSerifItalic12pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD443D25A2641A0079D69E /* FreeSerifItalic12pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F758825EC11EE00B9EACA /* FreeSansOblique24pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444025A2641A0079D69E /* FreeSansOblique24pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F758925EC11EE00B9EACA /* FreeSerifItalic9pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444925A2641A0079D69E /* FreeSerifItalic9pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F758A25EC11EE00B9EACA /* FreeMono24pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD444D25A2641A0079D69E /* FreeMono24pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F758B25EC11EE00B9EACA /* FreeSerifBoldItalic24pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445225A2641A0079D69E /* FreeSerifBoldItalic24pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39F758C25EC11EE00B9EACA /* FreeSerifItalic18pt7b.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AD445E25A2641A0079D69E /* FreeSerifItalic18pt7b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3A7F11125FD7416009BD84B /* Fonts.h in Headers */ = {isa = PBXBuildFile; fileRef = C3A7F10B25FD73F3009BD84B /* Fonts.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3A7F11725FD7418009BD84B /* Fonts.h in Headers */ = {isa = PBXBuildFile; fileRef = C3A7F10B25FD73F3009BD84B /* Fonts.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3A7F11D25FD7418009BD84B /* Fonts.h in Headers */ = {isa = PBXBuildFile; fileRef = C3A7F10B25FD73F3009BD84B /* Fonts.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3E7B449260E93E1007DE830 /* Arduino.h in Headers */ = {isa = PBXBuildFile; fileRef = C3E7B448260E93E1007DE830 /* Arduino.h */; };
+		C3E7B44A260E93E1007DE830 /* Arduino.h in Headers */ = {isa = PBXBuildFile; fileRef = C3E7B448260E93E1007DE830 /* Arduino.h */; };
+		C3E7B44B260E93E1007DE830 /* Arduino.h in Headers */ = {isa = PBXBuildFile; fileRef = C3E7B448260E93E1007DE830 /* Arduino.h */; };
+		C3E7B4E6260FDA87007DE830 /* GFXMatrix+Routines.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E7B4E5260FDA87007DE830 /* GFXMatrix+Routines.swift */; };
+		C3E7B4E7260FDA87007DE830 /* GFXMatrix+Routines.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E7B4E5260FDA87007DE830 /* GFXMatrix+Routines.swift */; };
+		C3E7B4E8260FDA87007DE830 /* GFXMatrix+Routines.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E7B4E5260FDA87007DE830 /* GFXMatrix+Routines.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C310515725A2596B00D2B5E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C310514325A2596B00D2B5E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C310514B25A2596B00D2B5E8;
+			remoteInfo = SwiftGFXWrapper;
+		};
+		C39F748525EC0FD700B9EACA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C310514325A2596B00D2B5E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C39F747A25EC0FD700B9EACA;
+			remoteInfo = SwiftGFXWrapperMacOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C310514C25A2596B00D2B5E8 /* SwiftGFXWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftGFXWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C310514F25A2596B00D2B5E8 /* SwiftGFXWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftGFXWrapper.h; sourceTree = "<group>"; };
+		C310515025A2596B00D2B5E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C310515525A2596B00D2B5E8 /* SwiftGFXWrapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftGFXWrapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C310515A25A2596B00D2B5E8 /* SwiftGFXWrapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGFXWrapperTests.swift; sourceTree = "<group>"; };
+		C310515C25A2596B00D2B5E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C310516E25A25A0700D2B5E8 /* VirtualDotMatrixWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VirtualDotMatrixWrapper.mm; sourceTree = "<group>"; };
+		C310516F25A25A0700D2B5E8 /* VirtualDotMatrixWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VirtualDotMatrixWrapper.h; sourceTree = "<group>"; };
+		C36EBE2A25FEF06C0047C6F7 /* UIColor+Colorable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Colorable.swift"; sourceTree = "<group>"; };
+		C36EBE2B25FEF06C0047C6F7 /* Color+Colorable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Colorable.swift"; sourceTree = "<group>"; };
+		C36EBE2D25FEF06C0047C6F7 /* Bridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bridge.swift; sourceTree = "<group>"; };
+		C36EBE2F25FEF06C0047C6F7 /* GFXFrameDriver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GFXFrameDriver.swift; sourceTree = "<group>"; };
+		C36EBE3025FEF06C0047C6F7 /* DisplayLinkDriver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayLinkDriver.swift; sourceTree = "<group>"; };
+		C36EBE3125FEF06C0047C6F7 /* GFXMatrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GFXMatrix.swift; sourceTree = "<group>"; };
+		C36EBE3325FEF06C0047C6F7 /* Colorable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colorable.swift; sourceTree = "<group>"; };
+		C37A750E25EAD87F008F249E /* SwiftGFXWrapperWatchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftGFXWrapperWatchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C37A751025EAD87F008F249E /* SwiftGFXWrapperWatchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftGFXWrapperWatchOS.h; sourceTree = "<group>"; };
+		C37A751125EAD87F008F249E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C39F747B25EC0FD700B9EACA /* SwiftGFXWrapperMacOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftGFXWrapperMacOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C39F747D25EC0FD700B9EACA /* SwiftGFXWrapperMacOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftGFXWrapperMacOS.h; sourceTree = "<group>"; };
+		C39F747E25EC0FD700B9EACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C39F748325EC0FD700B9EACA /* SwiftGFXWrapperMacOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftGFXWrapperMacOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C39F748825EC0FD700B9EACA /* SwiftGFXWrapperMacOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGFXWrapperMacOSTests.swift; sourceTree = "<group>"; };
+		C39F748A25EC0FD700B9EACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3A7F10B25FD73F3009BD84B /* Fonts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fonts.h; sourceTree = "<group>"; };
+		C3AD443025A2641A0079D69E /* gfxfont.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gfxfont.h; sourceTree = "<group>"; };
+		C3AD443125A2641A0079D69E /* Adafruit_GFX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Adafruit_GFX.h; sourceTree = "<group>"; };
+		C3AD443225A2641A0079D69E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C3AD443325A2641A0079D69E /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		C3AD443425A2641A0079D69E /* glcdfont.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = glcdfont.c; sourceTree = "<group>"; };
+		C3AD443525A2641A0079D69E /* Adafruit_GFX.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Adafruit_GFX.cpp; sourceTree = "<group>"; };
+		C3AD443625A2641A0079D69E /* license.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
+		C3AD443725A2641A0079D69E /* library.properties */ = {isa = PBXFileReference; lastKnownFileType = text; path = library.properties; sourceTree = "<group>"; };
+		C3AD443925A2641A0079D69E /* FreeSerifBoldItalic12pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeSerifBoldItalic12pt7b.h; sourceTree = "<group>"; };
+		C3AD443A25A2641A0079D69E /* FreeMonoBoldOblique12pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeMonoBoldOblique12pt7b.h; sourceTree = "<group>"; };
+		C3AD443B25A2641A0079D69E /* FreeSansBoldOblique18pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeSansBoldOblique18pt7b.h; sourceTree = "<group>"; };
+		C3AD443C25A2641A0079D69E /* Picopixel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Picopixel.h; sourceTree = "<group>"; };
+		C3AD443D25A2641A0079D69E /* FreeSerifItalic12pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeSerifItalic12pt7b.h; sourceTree = "<group>"; };
+		C3AD443E25A2641A0079D69E /* FreeMono18pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeMono18pt7b.h; sourceTree = "<group>"; };
+		C3AD443F25A2641A0079D69E /* FreeSansBold18pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeSansBold18pt7b.h; sourceTree = "<group>"; };
+		C3AD444025A2641A0079D69E /* FreeSansOblique24pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeSansOblique24pt7b.h; sourceTree = "<group>"; };
+		C3AD444125A2641A0079D69E /* FreeMonoOblique12pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeMonoOblique12pt7b.h; sourceTree = "<group>"; };
+		C3AD444225A2641A0079D69E /* FreeSansBold9pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeSansBold9pt7b.h; sourceTree = "<group>"; };
+		C3AD444325A2641A0079D69E /* FreeSans12pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeSans12pt7b.h; sourceTree = "<group>"; };
+		C3AD444425A2641A0079D69E /* FreeSansOblique9pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeSansOblique9pt7b.h; sourceTree = "<group>"; };
+		C3AD444525A2641A0079D69E /* FreeMonoBold9pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeMonoBold9pt7b.h; sourceTree = "<group>"; };
+		C3AD444625A2641A0079D69E /* FreeSerif12pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeSerif12pt7b.h; sourceTree = "<group>"; };
+		C3AD444725A2641A0079D69E /* FreeSansBoldOblique24pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeSansBoldOblique24pt7b.h; sourceTree = "<group>"; };
+		C3AD444825A2641A0079D69E /* FreeMonoOblique9pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeMonoOblique9pt7b.h; sourceTree = "<group>"; };
+		C3AD444925A2641A0079D69E /* FreeSerifItalic9pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeSerifItalic9pt7b.h; sourceTree = "<group>"; };
+		C3AD444A25A2641A0079D69E /* FreeSerifBold9pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeSerifBold9pt7b.h; sourceTree = "<group>"; };
+		C3AD444B25A2641A0079D69E /* TomThumb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TomThumb.h; sourceTree = "<group>"; };
+		C3AD444C25A2641A0079D69E /* FreeSans9pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeSans9pt7b.h; sourceTree = "<group>"; };
+		C3AD444D25A2641A0079D69E /* FreeMono24pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeMono24pt7b.h; sourceTree = "<group>"; };
+		C3AD444E25A2641A0079D69E /* FreeSansBold24pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeSansBold24pt7b.h; sourceTree = "<group>"; };
+		C3AD444F25A2641A0079D69E /* FreeSerifBold12pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeSerifBold12pt7b.h; sourceTree = "<group>"; };
+		C3AD445025A2641A0079D69E /* FreeMonoBold12pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeMonoBold12pt7b.h; sourceTree = "<group>"; };
+		C3AD445125A2641A0079D69E /* FreeSansOblique18pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeSansOblique18pt7b.h; sourceTree = "<group>"; };
+		C3AD445225A2641A0079D69E /* FreeSerifBoldItalic24pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeSerifBoldItalic24pt7b.h; sourceTree = "<group>"; };
+		C3AD445325A2641A0079D69E /* FreeSerifBoldItalic9pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeSerifBoldItalic9pt7b.h; sourceTree = "<group>"; };
+		C3AD445425A2641A0079D69E /* FreeMonoBoldOblique24pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeMonoBoldOblique24pt7b.h; sourceTree = "<group>"; };
+		C3AD445525A2641A0079D69E /* FreeSansBoldOblique9pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeSansBoldOblique9pt7b.h; sourceTree = "<group>"; };
+		C3AD445625A2641A0079D69E /* FreeSerifItalic24pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeSerifItalic24pt7b.h; sourceTree = "<group>"; };
+		C3AD445725A2641A0079D69E /* FreeMonoBoldOblique9pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeMonoBoldOblique9pt7b.h; sourceTree = "<group>"; };
+		C3AD445825A2641A0079D69E /* FreeSerif18pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeSerif18pt7b.h; sourceTree = "<group>"; };
+		C3AD445925A2641A0079D69E /* FreeSerifBold18pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeSerifBold18pt7b.h; sourceTree = "<group>"; };
+		C3AD445A25A2641A0079D69E /* FreeSansOblique12pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeSansOblique12pt7b.h; sourceTree = "<group>"; };
+		C3AD445B25A2641A0079D69E /* FreeMonoBold18pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeMonoBold18pt7b.h; sourceTree = "<group>"; };
+		C3AD445C25A2641A0079D69E /* FreeSans24pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeSans24pt7b.h; sourceTree = "<group>"; };
+		C3AD445D25A2641A0079D69E /* FreeMonoOblique24pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeMonoOblique24pt7b.h; sourceTree = "<group>"; };
+		C3AD445E25A2641A0079D69E /* FreeSerifItalic18pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeSerifItalic18pt7b.h; sourceTree = "<group>"; };
+		C3AD445F25A2641A0079D69E /* FreeSerif9pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeSerif9pt7b.h; sourceTree = "<group>"; };
+		C3AD446025A2641A0079D69E /* FreeSansBoldOblique12pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeSansBoldOblique12pt7b.h; sourceTree = "<group>"; };
+		C3AD446125A2641A0079D69E /* FreeSerif24pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeSerif24pt7b.h; sourceTree = "<group>"; };
+		C3AD446225A2641A0079D69E /* FreeSerifBoldItalic18pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeSerifBoldItalic18pt7b.h; sourceTree = "<group>"; };
+		C3AD446325A2641A0079D69E /* FreeMonoBoldOblique18pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeMonoBoldOblique18pt7b.h; sourceTree = "<group>"; };
+		C3AD446425A2641A0079D69E /* Org_01.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Org_01.h; sourceTree = "<group>"; };
+		C3AD446525A2641A0079D69E /* Tiny3x3a2pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tiny3x3a2pt7b.h; sourceTree = "<group>"; };
+		C3AD446625A2641A0079D69E /* FreeSans18pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeSans18pt7b.h; sourceTree = "<group>"; };
+		C3AD446725A2641A0079D69E /* FreeMonoOblique18pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeMonoOblique18pt7b.h; sourceTree = "<group>"; };
+		C3AD446825A2641A0079D69E /* FreeSerifBold24pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeSerifBold24pt7b.h; sourceTree = "<group>"; };
+		C3AD446925A2641A0079D69E /* FreeSansBold12pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeSansBold12pt7b.h; sourceTree = "<group>"; };
+		C3AD446A25A2641A0079D69E /* FreeMonoBold24pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeMonoBold24pt7b.h; sourceTree = "<group>"; };
+		C3AD446B25A2641A0079D69E /* FreeMono9pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeMono9pt7b.h; sourceTree = "<group>"; };
+		C3AD446C25A2641A0079D69E /* FreeMono12pt7b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeMono12pt7b.h; sourceTree = "<group>"; };
+		C3AD446E25A2641D0079D69E /* WString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WString.h; sourceTree = "<group>"; };
+		C3AD446F25A2641D0079D69E /* Print.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Print.cpp; sourceTree = "<group>"; };
+		C3AD447025A2641D0079D69E /* Printable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Printable.h; sourceTree = "<group>"; };
+		C3AD447125A2641D0079D69E /* Print.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Print.h; sourceTree = "<group>"; };
+		C3AD447325A264200079D69E /* VirtualDotMatrix.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = VirtualDotMatrix.hpp; sourceTree = "<group>"; };
+		C3AD447425A264200079D69E /* VirtualDotMatrix.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VirtualDotMatrix.cpp; sourceTree = "<group>"; };
+		C3E7B448260E93E1007DE830 /* Arduino.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Arduino.h; sourceTree = "<group>"; };
+		C3E7B4E5260FDA87007DE830 /* GFXMatrix+Routines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GFXMatrix+Routines.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C310514925A2596B00D2B5E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C310515225A2596B00D2B5E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C310515625A2596B00D2B5E8 /* SwiftGFXWrapper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C37A750B25EAD87F008F249E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C39F747825EC0FD700B9EACA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C39F748025EC0FD700B9EACA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C39F748425EC0FD700B9EACA /* SwiftGFXWrapperMacOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C310514225A2596B00D2B5E8 = {
+			isa = PBXGroup;
+			children = (
+				C37A75DE25EADEC3008F249E /* Shared */,
+				C310514E25A2596B00D2B5E8 /* SwiftGFXWrapper */,
+				C310515925A2596B00D2B5E8 /* SwiftGFXWrapperTests */,
+				C37A750F25EAD87F008F249E /* SwiftGFXWrapperWatchOS */,
+				C39F747C25EC0FD700B9EACA /* SwiftGFXWrapperMacOS */,
+				C39F748725EC0FD700B9EACA /* SwiftGFXWrapperMacOSTests */,
+				C310514D25A2596B00D2B5E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C310514D25A2596B00D2B5E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C310514C25A2596B00D2B5E8 /* SwiftGFXWrapper.framework */,
+				C310515525A2596B00D2B5E8 /* SwiftGFXWrapperTests.xctest */,
+				C37A750E25EAD87F008F249E /* SwiftGFXWrapperWatchOS.framework */,
+				C39F747B25EC0FD700B9EACA /* SwiftGFXWrapperMacOS.framework */,
+				C39F748325EC0FD700B9EACA /* SwiftGFXWrapperMacOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C310514E25A2596B00D2B5E8 /* SwiftGFXWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				C310514F25A2596B00D2B5E8 /* SwiftGFXWrapper.h */,
+				C310515025A2596B00D2B5E8 /* Info.plist */,
+			);
+			path = SwiftGFXWrapper;
+			sourceTree = "<group>";
+		};
+		C310515925A2596B00D2B5E8 /* SwiftGFXWrapperTests */ = {
+			isa = PBXGroup;
+			children = (
+				C310515A25A2596B00D2B5E8 /* SwiftGFXWrapperTests.swift */,
+				C310515C25A2596B00D2B5E8 /* Info.plist */,
+			);
+			path = SwiftGFXWrapperTests;
+			sourceTree = "<group>";
+		};
+		C33043D225A27F2D000F2FAD /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				C3AD447225A264200079D69E /* VirtualDotMatrix */,
+				C3AD446D25A2641D0079D69E /* inc */,
+				C3AD442F25A2641A0079D69E /* Adafruit-GFX-Library */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		C36EBE2925FEF06C0047C6F7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C36EBE2B25FEF06C0047C6F7 /* Color+Colorable.swift */,
+				C36EBE2A25FEF06C0047C6F7 /* UIColor+Colorable.swift */,
+				C3E7B4E5260FDA87007DE830 /* GFXMatrix+Routines.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C36EBE2C25FEF06C0047C6F7 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				C36EBE2D25FEF06C0047C6F7 /* Bridge.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		C36EBE2E25FEF06C0047C6F7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C36EBE3325FEF06C0047C6F7 /* Colorable.swift */,
+				C36EBE3025FEF06C0047C6F7 /* DisplayLinkDriver.swift */,
+				C36EBE2F25FEF06C0047C6F7 /* GFXFrameDriver.swift */,
+				C36EBE3125FEF06C0047C6F7 /* GFXMatrix.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C37A750F25EAD87F008F249E /* SwiftGFXWrapperWatchOS */ = {
+			isa = PBXGroup;
+			children = (
+				C37A751025EAD87F008F249E /* SwiftGFXWrapperWatchOS.h */,
+				C37A751125EAD87F008F249E /* Info.plist */,
+			);
+			path = SwiftGFXWrapperWatchOS;
+			sourceTree = "<group>";
+		};
+		C37A75DE25EADEC3008F249E /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				C36EBE2925FEF06C0047C6F7 /* Extensions */,
+				C36EBE2E25FEF06C0047C6F7 /* Models */,
+				C36EBE2C25FEF06C0047C6F7 /* Util */,
+				C3A7F10B25FD73F3009BD84B /* Fonts.h */,
+				C310516F25A25A0700D2B5E8 /* VirtualDotMatrixWrapper.h */,
+				C310516E25A25A0700D2B5E8 /* VirtualDotMatrixWrapper.mm */,
+				C33043D225A27F2D000F2FAD /* lib */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		C39F747C25EC0FD700B9EACA /* SwiftGFXWrapperMacOS */ = {
+			isa = PBXGroup;
+			children = (
+				C39F747D25EC0FD700B9EACA /* SwiftGFXWrapperMacOS.h */,
+				C39F747E25EC0FD700B9EACA /* Info.plist */,
+			);
+			path = SwiftGFXWrapperMacOS;
+			sourceTree = "<group>";
+		};
+		C39F748725EC0FD700B9EACA /* SwiftGFXWrapperMacOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				C39F748825EC0FD700B9EACA /* SwiftGFXWrapperMacOSTests.swift */,
+				C39F748A25EC0FD700B9EACA /* Info.plist */,
+			);
+			path = SwiftGFXWrapperMacOSTests;
+			sourceTree = "<group>";
+		};
+		C3AD442F25A2641A0079D69E /* Adafruit-GFX-Library */ = {
+			isa = PBXGroup;
+			children = (
+				C3AD443025A2641A0079D69E /* gfxfont.h */,
+				C3AD443125A2641A0079D69E /* Adafruit_GFX.h */,
+				C3AD443225A2641A0079D69E /* README.md */,
+				C3AD443325A2641A0079D69E /* .gitignore */,
+				C3AD443425A2641A0079D69E /* glcdfont.c */,
+				C3AD443525A2641A0079D69E /* Adafruit_GFX.cpp */,
+				C3AD443625A2641A0079D69E /* license.txt */,
+				C3AD443725A2641A0079D69E /* library.properties */,
+				C3AD443825A2641A0079D69E /* Fonts */,
+			);
+			path = "Adafruit-GFX-Library";
+			sourceTree = "<group>";
+		};
+		C3AD443825A2641A0079D69E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C3AD443925A2641A0079D69E /* FreeSerifBoldItalic12pt7b.h */,
+				C3AD443A25A2641A0079D69E /* FreeMonoBoldOblique12pt7b.h */,
+				C3AD443B25A2641A0079D69E /* FreeSansBoldOblique18pt7b.h */,
+				C3AD443C25A2641A0079D69E /* Picopixel.h */,
+				C3AD443D25A2641A0079D69E /* FreeSerifItalic12pt7b.h */,
+				C3AD443E25A2641A0079D69E /* FreeMono18pt7b.h */,
+				C3AD443F25A2641A0079D69E /* FreeSansBold18pt7b.h */,
+				C3AD444025A2641A0079D69E /* FreeSansOblique24pt7b.h */,
+				C3AD444125A2641A0079D69E /* FreeMonoOblique12pt7b.h */,
+				C3AD444225A2641A0079D69E /* FreeSansBold9pt7b.h */,
+				C3AD444325A2641A0079D69E /* FreeSans12pt7b.h */,
+				C3AD444425A2641A0079D69E /* FreeSansOblique9pt7b.h */,
+				C3AD444525A2641A0079D69E /* FreeMonoBold9pt7b.h */,
+				C3AD444625A2641A0079D69E /* FreeSerif12pt7b.h */,
+				C3AD444725A2641A0079D69E /* FreeSansBoldOblique24pt7b.h */,
+				C3AD444825A2641A0079D69E /* FreeMonoOblique9pt7b.h */,
+				C3AD444925A2641A0079D69E /* FreeSerifItalic9pt7b.h */,
+				C3AD444A25A2641A0079D69E /* FreeSerifBold9pt7b.h */,
+				C3AD444B25A2641A0079D69E /* TomThumb.h */,
+				C3AD444C25A2641A0079D69E /* FreeSans9pt7b.h */,
+				C3AD444D25A2641A0079D69E /* FreeMono24pt7b.h */,
+				C3AD444E25A2641A0079D69E /* FreeSansBold24pt7b.h */,
+				C3AD444F25A2641A0079D69E /* FreeSerifBold12pt7b.h */,
+				C3AD445025A2641A0079D69E /* FreeMonoBold12pt7b.h */,
+				C3AD445125A2641A0079D69E /* FreeSansOblique18pt7b.h */,
+				C3AD445225A2641A0079D69E /* FreeSerifBoldItalic24pt7b.h */,
+				C3AD445325A2641A0079D69E /* FreeSerifBoldItalic9pt7b.h */,
+				C3AD445425A2641A0079D69E /* FreeMonoBoldOblique24pt7b.h */,
+				C3AD445525A2641A0079D69E /* FreeSansBoldOblique9pt7b.h */,
+				C3AD445625A2641A0079D69E /* FreeSerifItalic24pt7b.h */,
+				C3AD445725A2641A0079D69E /* FreeMonoBoldOblique9pt7b.h */,
+				C3AD445825A2641A0079D69E /* FreeSerif18pt7b.h */,
+				C3AD445925A2641A0079D69E /* FreeSerifBold18pt7b.h */,
+				C3AD445A25A2641A0079D69E /* FreeSansOblique12pt7b.h */,
+				C3AD445B25A2641A0079D69E /* FreeMonoBold18pt7b.h */,
+				C3AD445C25A2641A0079D69E /* FreeSans24pt7b.h */,
+				C3AD445D25A2641A0079D69E /* FreeMonoOblique24pt7b.h */,
+				C3AD445E25A2641A0079D69E /* FreeSerifItalic18pt7b.h */,
+				C3AD445F25A2641A0079D69E /* FreeSerif9pt7b.h */,
+				C3AD446025A2641A0079D69E /* FreeSansBoldOblique12pt7b.h */,
+				C3AD446125A2641A0079D69E /* FreeSerif24pt7b.h */,
+				C3AD446225A2641A0079D69E /* FreeSerifBoldItalic18pt7b.h */,
+				C3AD446325A2641A0079D69E /* FreeMonoBoldOblique18pt7b.h */,
+				C3AD446425A2641A0079D69E /* Org_01.h */,
+				C3AD446525A2641A0079D69E /* Tiny3x3a2pt7b.h */,
+				C3AD446625A2641A0079D69E /* FreeSans18pt7b.h */,
+				C3AD446725A2641A0079D69E /* FreeMonoOblique18pt7b.h */,
+				C3AD446825A2641A0079D69E /* FreeSerifBold24pt7b.h */,
+				C3AD446925A2641A0079D69E /* FreeSansBold12pt7b.h */,
+				C3AD446A25A2641A0079D69E /* FreeMonoBold24pt7b.h */,
+				C3AD446B25A2641A0079D69E /* FreeMono9pt7b.h */,
+				C3AD446C25A2641A0079D69E /* FreeMono12pt7b.h */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		C3AD446D25A2641D0079D69E /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				C3AD446F25A2641D0079D69E /* Print.cpp */,
+				C3AD447125A2641D0079D69E /* Print.h */,
+				C3AD447025A2641D0079D69E /* Printable.h */,
+				C3E7B448260E93E1007DE830 /* Arduino.h */,
+				C3AD446E25A2641D0079D69E /* WString.h */,
+			);
+			path = inc;
+			sourceTree = "<group>";
+		};
+		C3AD447225A264200079D69E /* VirtualDotMatrix */ = {
+			isa = PBXGroup;
+			children = (
+				C3AD447325A264200079D69E /* VirtualDotMatrix.hpp */,
+				C3AD447425A264200079D69E /* VirtualDotMatrix.cpp */,
+			);
+			path = VirtualDotMatrix;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C310514725A2596B00D2B5E8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C345701425A27C0700618271 /* FreeSansOblique24pt7b.h in Headers */,
+				C345700D25A27C0700618271 /* FreeSansBold18pt7b.h in Headers */,
+				C345700825A27C0700618271 /* FreeMonoBold12pt7b.h in Headers */,
+				C345702A25A27C0700618271 /* FreeSerifItalic9pt7b.h in Headers */,
+				C345702825A27C0700618271 /* FreeSerifBoldItalic12pt7b.h in Headers */,
+				C3E7B449260E93E1007DE830 /* Arduino.h in Headers */,
+				C345703125A27C0700618271 /* FreeMono12pt7b.h in Headers */,
+				C345703625A27C0700618271 /* Org_01.h in Headers */,
+				C345702725A27C0700618271 /* FreeSansBold24pt7b.h in Headers */,
+				C345700325A27C0700618271 /* FreeMonoOblique24pt7b.h in Headers */,
+				C345701E25A27C0700618271 /* FreeMono24pt7b.h in Headers */,
+				C345701D25A27C0700618271 /* FreeSansBold12pt7b.h in Headers */,
+				C345702225A27C0700618271 /* FreeSerifBoldItalic24pt7b.h in Headers */,
+				C345700425A27C0700618271 /* FreeSerifBoldItalic18pt7b.h in Headers */,
+				C3456FFF25A27BFB00618271 /* Adafruit_GFX.h in Headers */,
+				C345701725A27C0700618271 /* FreeMonoBoldOblique9pt7b.h in Headers */,
+				C345701125A27C0700618271 /* FreeSans24pt7b.h in Headers */,
+				C345702B25A27C0700618271 /* FreeSerifBold12pt7b.h in Headers */,
+				C345702125A27C0700618271 /* FreeSansOblique12pt7b.h in Headers */,
+				C345700F25A27C0700618271 /* FreeSansBold9pt7b.h in Headers */,
+				C345702625A27C0700618271 /* FreeSansBoldOblique24pt7b.h in Headers */,
+				C345700925A27C0700618271 /* FreeMono18pt7b.h in Headers */,
+				C310515D25A2596B00D2B5E8 /* SwiftGFXWrapper.h in Headers */,
+				C345703225A27C0700618271 /* FreeMonoOblique9pt7b.h in Headers */,
+				C345700E25A27C0700618271 /* TomThumb.h in Headers */,
+				C345702D25A27C0700618271 /* FreeSansBoldOblique9pt7b.h in Headers */,
+				C345702025A27C0700618271 /* FreeMonoOblique12pt7b.h in Headers */,
+				C3456FF925A27BED00618271 /* Print.h in Headers */,
+				C345700725A27C0700618271 /* FreeMonoBold9pt7b.h in Headers */,
+				C345701825A27C0700618271 /* FreeSans18pt7b.h in Headers */,
+				C345703525A27C0700618271 /* FreeMonoBoldOblique24pt7b.h in Headers */,
+				C345701925A27C0700618271 /* FreeSerifBoldItalic9pt7b.h in Headers */,
+				C345702325A27C0700618271 /* FreeSerifBold18pt7b.h in Headers */,
+				C345700A25A27C0700618271 /* FreeMonoBold24pt7b.h in Headers */,
+				C345701A25A27C0700618271 /* FreeSans9pt7b.h in Headers */,
+				C345701B25A27C0700618271 /* Tiny3x3a2pt7b.h in Headers */,
+				C3A7F11125FD7416009BD84B /* Fonts.h in Headers */,
+				C345701F25A27C0700618271 /* Picopixel.h in Headers */,
+				C345700625A27C0700618271 /* FreeSerifBold24pt7b.h in Headers */,
+				C345703325A27C0700618271 /* FreeSerifItalic24pt7b.h in Headers */,
+				C3456FFA25A27BED00618271 /* WString.h in Headers */,
+				C345700525A27C0700618271 /* FreeMonoOblique18pt7b.h in Headers */,
+				C345702F25A27C0700618271 /* FreeSerifItalic12pt7b.h in Headers */,
+				C345703425A27C0700618271 /* FreeMono9pt7b.h in Headers */,
+				C3456FF825A27BED00618271 /* Printable.h in Headers */,
+				C345702525A27C0700618271 /* FreeSansOblique9pt7b.h in Headers */,
+				C345702C25A27C0700618271 /* FreeSansOblique18pt7b.h in Headers */,
+				C345700C25A27C0700618271 /* FreeSansBoldOblique12pt7b.h in Headers */,
+				C345703025A27C0700618271 /* FreeSerif24pt7b.h in Headers */,
+				C345701025A27C0700618271 /* FreeSerifBold9pt7b.h in Headers */,
+				C310517125A25A0700D2B5E8 /* VirtualDotMatrixWrapper.h in Headers */,
+				C345701525A27C0700618271 /* FreeMonoBoldOblique18pt7b.h in Headers */,
+				C3456FFD25A27BFB00618271 /* gfxfont.h in Headers */,
+				C345702E25A27C0700618271 /* FreeSerif18pt7b.h in Headers */,
+				C345702425A27C0700618271 /* FreeMonoBold18pt7b.h in Headers */,
+				C345701625A27C0700618271 /* FreeSerifItalic18pt7b.h in Headers */,
+				C345702925A27C0700618271 /* FreeSerif12pt7b.h in Headers */,
+				C345701225A27C0700618271 /* FreeMonoBoldOblique12pt7b.h in Headers */,
+				C345701C25A27C0700618271 /* FreeSans12pt7b.h in Headers */,
+				C300812B25ABD39700A0D938 /* VirtualDotMatrix.hpp in Headers */,
+				C345701325A27C0700618271 /* FreeSansBoldOblique18pt7b.h in Headers */,
+				C345700B25A27C0700618271 /* FreeSerif9pt7b.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C37A750925EAD87F008F249E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C37A753C25EAD8B7008F249E /* Adafruit_GFX.h in Headers */,
+				C37A757F25EAD8D2008F249E /* Picopixel.h in Headers */,
+				C37A757825EAD8D2008F249E /* FreeSerif24pt7b.h in Headers */,
+				C37A756625EAD8D2008F249E /* FreeMono12pt7b.h in Headers */,
+				C37A755125EAD8D2008F249E /* FreeSansOblique18pt7b.h in Headers */,
+				C3E7B44A260E93E1007DE830 /* Arduino.h in Headers */,
+				C37A753D25EAD8B7008F249E /* gfxfont.h in Headers */,
+				C37A755B25EAD8D2008F249E /* FreeSerifBoldItalic12pt7b.h in Headers */,
+				C37A757C25EAD8D2008F249E /* FreeMono9pt7b.h in Headers */,
+				C37A756125EAD8D2008F249E /* FreeSansBoldOblique12pt7b.h in Headers */,
+				C37A755925EAD8D2008F249E /* TomThumb.h in Headers */,
+				C37A756925EAD8D2008F249E /* FreeMono24pt7b.h in Headers */,
+				C37A753125EAD8A9008F249E /* Print.h in Headers */,
+				C37A755A25EAD8D2008F249E /* FreeMonoBold9pt7b.h in Headers */,
+				C37A755725EAD8D2008F249E /* FreeMonoBoldOblique24pt7b.h in Headers */,
+				C37A755D25EAD8D2008F249E /* FreeSansBoldOblique24pt7b.h in Headers */,
+				C37A755825EAD8D2008F249E /* FreeSans12pt7b.h in Headers */,
+				C37A757B25EAD8D2008F249E /* FreeSerifBold24pt7b.h in Headers */,
+				C37A753025EAD8A9008F249E /* Printable.h in Headers */,
+				C37A757125EAD8D2008F249E /* FreeMonoBold24pt7b.h in Headers */,
+				C37A754F25EAD8D2008F249E /* FreeSansBold9pt7b.h in Headers */,
+				C37A755625EAD8D2008F249E /* Org_01.h in Headers */,
+				C37A756F25EAD8D2008F249E /* FreeMonoBold18pt7b.h in Headers */,
+				C37A757225EAD8D2008F249E /* FreeMonoOblique24pt7b.h in Headers */,
+				C37A756C25EAD8D2008F249E /* FreeSansOblique24pt7b.h in Headers */,
+				C37A756525EAD8D2008F249E /* FreeMonoBold12pt7b.h in Headers */,
+				C37A753225EAD8A9008F249E /* WString.h in Headers */,
+				C37A756B25EAD8D2008F249E /* FreeMonoOblique9pt7b.h in Headers */,
+				C37A757D25EAD8D2008F249E /* FreeSansBoldOblique18pt7b.h in Headers */,
+				C37A756D25EAD8D2008F249E /* FreeSans18pt7b.h in Headers */,
+				C37A755225EAD8D2008F249E /* FreeSerifBold12pt7b.h in Headers */,
+				C37A755F25EAD8D2008F249E /* FreeSansBold12pt7b.h in Headers */,
+				C37A756325EAD8D2008F249E /* FreeSerifBoldItalic18pt7b.h in Headers */,
+				C37A756825EAD8D2008F249E /* FreeSerifBold18pt7b.h in Headers */,
+				C37A757625EAD8D2008F249E /* FreeSerifItalic9pt7b.h in Headers */,
+				C37A755525EAD8D2008F249E /* FreeSansOblique12pt7b.h in Headers */,
+				C3A7F11725FD7418009BD84B /* Fonts.h in Headers */,
+				C37A757425EAD8D2008F249E /* FreeSerifItalic12pt7b.h in Headers */,
+				C37A756A25EAD8D2008F249E /* FreeMonoBoldOblique12pt7b.h in Headers */,
+				C37A756E25EAD8D2008F249E /* FreeSerifBoldItalic24pt7b.h in Headers */,
+				C37A752825EAD8A2008F249E /* VirtualDotMatrix.hpp in Headers */,
+				C37A755E25EAD8D2008F249E /* FreeSerif18pt7b.h in Headers */,
+				C37A754E25EAD8D2008F249E /* Tiny3x3a2pt7b.h in Headers */,
+				C37A758125EAD8D2008F249E /* FreeSerifBoldItalic9pt7b.h in Headers */,
+				C37A755325EAD8D2008F249E /* FreeSerif9pt7b.h in Headers */,
+				C37A757925EAD8D2008F249E /* FreeSans9pt7b.h in Headers */,
+				C37A757025EAD8D2008F249E /* FreeSansOblique9pt7b.h in Headers */,
+				C37A756725EAD8D2008F249E /* FreeMonoBoldOblique9pt7b.h in Headers */,
+				C37A757325EAD8D2008F249E /* FreeMono18pt7b.h in Headers */,
+				C37A752025EAD898008F249E /* VirtualDotMatrixWrapper.h in Headers */,
+				C37A756425EAD8D2008F249E /* FreeMonoOblique12pt7b.h in Headers */,
+				C37A756225EAD8D2008F249E /* FreeSerifBold9pt7b.h in Headers */,
+				C37A757A25EAD8D2008F249E /* FreeSansBold18pt7b.h in Headers */,
+				C37A756025EAD8D2008F249E /* FreeSansBoldOblique9pt7b.h in Headers */,
+				C37A757725EAD8D2008F249E /* FreeSerifItalic24pt7b.h in Headers */,
+				C37A755025EAD8D2008F249E /* FreeSerif12pt7b.h in Headers */,
+				C37A757525EAD8D2008F249E /* FreeSerifItalic18pt7b.h in Headers */,
+				C37A755C25EAD8D2008F249E /* FreeSansBold24pt7b.h in Headers */,
+				C37A758025EAD8D2008F249E /* FreeSans24pt7b.h in Headers */,
+				C37A751225EAD87F008F249E /* SwiftGFXWrapperWatchOS.h in Headers */,
+				C37A757E25EAD8D2008F249E /* FreeMonoBoldOblique18pt7b.h in Headers */,
+				C37A755425EAD8D2008F249E /* FreeMonoOblique18pt7b.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C39F747625EC0FD700B9EACA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C39F757125EC11ED00B9EACA /* Picopixel.h in Headers */,
+				C39F757325EC11ED00B9EACA /* FreeSans24pt7b.h in Headers */,
+				C39F757225EC11ED00B9EACA /* FreeSansBold24pt7b.h in Headers */,
+				C39F758B25EC11EE00B9EACA /* FreeSerifBoldItalic24pt7b.h in Headers */,
+				C39F757A25EC11ED00B9EACA /* FreeSerifBold18pt7b.h in Headers */,
+				C3E7B44B260E93E1007DE830 /* Arduino.h in Headers */,
+				C39F757025EC11ED00B9EACA /* FreeSansBoldOblique18pt7b.h in Headers */,
+				C39F756C25EC11ED00B9EACA /* FreeSerif18pt7b.h in Headers */,
+				C39F758925EC11EE00B9EACA /* FreeSerifItalic9pt7b.h in Headers */,
+				C39F758625EC11EE00B9EACA /* TomThumb.h in Headers */,
+				C39F755F25EC11ED00B9EACA /* FreeSans12pt7b.h in Headers */,
+				C39F754725EC11DE00B9EACA /* Adafruit_GFX.h in Headers */,
+				C39F756625EC11ED00B9EACA /* FreeMono9pt7b.h in Headers */,
+				C39F758C25EC11EE00B9EACA /* FreeSerifItalic18pt7b.h in Headers */,
+				C39F756F25EC11ED00B9EACA /* FreeSerifBold9pt7b.h in Headers */,
+				C39F757B25EC11ED00B9EACA /* Org_01.h in Headers */,
+				C39F756925EC11ED00B9EACA /* FreeMonoOblique12pt7b.h in Headers */,
+				C39F757E25EC11ED00B9EACA /* FreeSansBold18pt7b.h in Headers */,
+				C39F756E25EC11ED00B9EACA /* FreeMono18pt7b.h in Headers */,
+				C39F756725EC11ED00B9EACA /* FreeSerifItalic24pt7b.h in Headers */,
+				C39F753625EC11D200B9EACA /* Print.h in Headers */,
+				C39F757625EC11ED00B9EACA /* FreeSerifBoldItalic18pt7b.h in Headers */,
+				C39F757925EC11ED00B9EACA /* FreeSans9pt7b.h in Headers */,
+				C39F758A25EC11EE00B9EACA /* FreeMono24pt7b.h in Headers */,
+				C39F757D25EC11ED00B9EACA /* FreeSansBold9pt7b.h in Headers */,
+				C39F758325EC11EE00B9EACA /* FreeSerif12pt7b.h in Headers */,
+				C39F753025EC11CF00B9EACA /* Printable.h in Headers */,
+				C39F758725EC11EE00B9EACA /* FreeSerifItalic12pt7b.h in Headers */,
+				C39F756825EC11ED00B9EACA /* FreeMonoOblique9pt7b.h in Headers */,
+				C39F751825EC11BF00B9EACA /* VirtualDotMatrix.hpp in Headers */,
+				C39F758525EC11EE00B9EACA /* FreeSans18pt7b.h in Headers */,
+				C39F755D25EC11ED00B9EACA /* Tiny3x3a2pt7b.h in Headers */,
+				C39F755E25EC11ED00B9EACA /* FreeMono12pt7b.h in Headers */,
+				C39F756325EC11ED00B9EACA /* FreeSansOblique9pt7b.h in Headers */,
+				C39F757525EC11ED00B9EACA /* FreeSansBoldOblique12pt7b.h in Headers */,
+				C39F758125EC11ED00B9EACA /* FreeMonoBoldOblique12pt7b.h in Headers */,
+				C3A7F11D25FD7418009BD84B /* Fonts.h in Headers */,
+				C39F755C25EC11ED00B9EACA /* FreeSerifBoldItalic9pt7b.h in Headers */,
+				C39F756D25EC11ED00B9EACA /* FreeSansBold12pt7b.h in Headers */,
+				C39F758225EC11ED00B9EACA /* FreeSerif24pt7b.h in Headers */,
+				C39F756525EC11ED00B9EACA /* FreeSerifBold24pt7b.h in Headers */,
+				C39F752425EC11C700B9EACA /* WString.h in Headers */,
+				C39F756425EC11ED00B9EACA /* FreeMonoBold12pt7b.h in Headers */,
+				C39F756125EC11ED00B9EACA /* FreeSerifBold12pt7b.h in Headers */,
+				C39F755925EC11ED00B9EACA /* FreeMonoBoldOblique24pt7b.h in Headers */,
+				C39F748B25EC0FD700B9EACA /* SwiftGFXWrapperMacOS.h in Headers */,
+				C39F755A25EC11ED00B9EACA /* FreeSansOblique18pt7b.h in Headers */,
+				C39F750725EC11AD00B9EACA /* VirtualDotMatrixWrapper.h in Headers */,
+				C39F753C25EC11D800B9EACA /* gfxfont.h in Headers */,
+				C39F756225EC11ED00B9EACA /* FreeSerifBoldItalic12pt7b.h in Headers */,
+				C39F757425EC11ED00B9EACA /* FreeMonoBold9pt7b.h in Headers */,
+				C39F756B25EC11ED00B9EACA /* FreeMonoBold24pt7b.h in Headers */,
+				C39F755B25EC11ED00B9EACA /* FreeMonoBold18pt7b.h in Headers */,
+				C39F757F25EC11ED00B9EACA /* FreeSerif9pt7b.h in Headers */,
+				C39F758825EC11EE00B9EACA /* FreeSansOblique24pt7b.h in Headers */,
+				C39F757825EC11ED00B9EACA /* FreeMonoOblique24pt7b.h in Headers */,
+				C39F757C25EC11ED00B9EACA /* FreeMonoBoldOblique18pt7b.h in Headers */,
+				C39F756025EC11ED00B9EACA /* FreeSansBoldOblique9pt7b.h in Headers */,
+				C39F758025EC11ED00B9EACA /* FreeSansBoldOblique24pt7b.h in Headers */,
+				C39F758425EC11EE00B9EACA /* FreeSansOblique12pt7b.h in Headers */,
+				C39F756A25EC11ED00B9EACA /* FreeMonoOblique18pt7b.h in Headers */,
+				C39F757725EC11ED00B9EACA /* FreeMonoBoldOblique9pt7b.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C310514B25A2596B00D2B5E8 /* SwiftGFXWrapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C310516025A2596B00D2B5E8 /* Build configuration list for PBXNativeTarget "SwiftGFXWrapper" */;
+			buildPhases = (
+				C310514725A2596B00D2B5E8 /* Headers */,
+				C310514825A2596B00D2B5E8 /* Sources */,
+				C310514925A2596B00D2B5E8 /* Frameworks */,
+				C310514A25A2596B00D2B5E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftGFXWrapper;
+			productName = SwiftGFXWrapper;
+			productReference = C310514C25A2596B00D2B5E8 /* SwiftGFXWrapper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C310515425A2596B00D2B5E8 /* SwiftGFXWrapperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C310516325A2596B00D2B5E8 /* Build configuration list for PBXNativeTarget "SwiftGFXWrapperTests" */;
+			buildPhases = (
+				C310515125A2596B00D2B5E8 /* Sources */,
+				C310515225A2596B00D2B5E8 /* Frameworks */,
+				C310515325A2596B00D2B5E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C310515825A2596B00D2B5E8 /* PBXTargetDependency */,
+			);
+			name = SwiftGFXWrapperTests;
+			productName = SwiftGFXWrapperTests;
+			productReference = C310515525A2596B00D2B5E8 /* SwiftGFXWrapperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C37A750D25EAD87F008F249E /* SwiftGFXWrapperWatchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C37A751525EAD87F008F249E /* Build configuration list for PBXNativeTarget "SwiftGFXWrapperWatchOS" */;
+			buildPhases = (
+				C37A750925EAD87F008F249E /* Headers */,
+				C37A750A25EAD87F008F249E /* Sources */,
+				C37A750B25EAD87F008F249E /* Frameworks */,
+				C37A750C25EAD87F008F249E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftGFXWrapperWatchOS;
+			productName = SwiftGFXWrapperWatchOS;
+			productReference = C37A750E25EAD87F008F249E /* SwiftGFXWrapperWatchOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C39F747A25EC0FD700B9EACA /* SwiftGFXWrapperMacOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C39F749025EC0FD700B9EACA /* Build configuration list for PBXNativeTarget "SwiftGFXWrapperMacOS" */;
+			buildPhases = (
+				C39F747625EC0FD700B9EACA /* Headers */,
+				C39F747725EC0FD700B9EACA /* Sources */,
+				C39F747825EC0FD700B9EACA /* Frameworks */,
+				C39F747925EC0FD700B9EACA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftGFXWrapperMacOS;
+			productName = SwiftGFXWrapperMacOS;
+			productReference = C39F747B25EC0FD700B9EACA /* SwiftGFXWrapperMacOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C39F748225EC0FD700B9EACA /* SwiftGFXWrapperMacOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C39F749125EC0FD700B9EACA /* Build configuration list for PBXNativeTarget "SwiftGFXWrapperMacOSTests" */;
+			buildPhases = (
+				C39F747F25EC0FD700B9EACA /* Sources */,
+				C39F748025EC0FD700B9EACA /* Frameworks */,
+				C39F748125EC0FD700B9EACA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C39F748625EC0FD700B9EACA /* PBXTargetDependency */,
+			);
+			name = SwiftGFXWrapperMacOSTests;
+			productName = SwiftGFXWrapperMacOSTests;
+			productReference = C39F748325EC0FD700B9EACA /* SwiftGFXWrapperMacOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C310514325A2596B00D2B5E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					C310514B25A2596B00D2B5E8 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					C310515425A2596B00D2B5E8 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					C37A750D25EAD87F008F249E = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					C39F747A25EC0FD700B9EACA = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					C39F748225EC0FD700B9EACA = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = C310514625A2596B00D2B5E8 /* Build configuration list for PBXProject "SwiftGFXWrapper" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C310514225A2596B00D2B5E8;
+			productRefGroup = C310514D25A2596B00D2B5E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C310514B25A2596B00D2B5E8 /* SwiftGFXWrapper */,
+				C310515425A2596B00D2B5E8 /* SwiftGFXWrapperTests */,
+				C37A750D25EAD87F008F249E /* SwiftGFXWrapperWatchOS */,
+				C39F747A25EC0FD700B9EACA /* SwiftGFXWrapperMacOS */,
+				C39F748225EC0FD700B9EACA /* SwiftGFXWrapperMacOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C310514A25A2596B00D2B5E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C310515325A2596B00D2B5E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C37A750C25EAD87F008F249E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C39F747925EC0FD700B9EACA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C39F748125EC0FD700B9EACA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C310514825A2596B00D2B5E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C36EBE4925FEF06C0047C6F7 /* Colorable.swift in Sources */,
+				C345700025A27BFB00618271 /* Adafruit_GFX.cpp in Sources */,
+				C3456FFE25A27BFB00618271 /* glcdfont.c in Sources */,
+				C36EBE4025FEF06C0047C6F7 /* DisplayLinkDriver.swift in Sources */,
+				C36EBE3725FEF06C0047C6F7 /* Color+Colorable.swift in Sources */,
+				C3456FF725A27BED00618271 /* Print.cpp in Sources */,
+				C3E7B4E6260FDA87007DE830 /* GFXMatrix+Routines.swift in Sources */,
+				C36EBE3D25FEF06C0047C6F7 /* GFXFrameDriver.swift in Sources */,
+				C36EBE4325FEF06C0047C6F7 /* GFXMatrix.swift in Sources */,
+				C36EBE3A25FEF06C0047C6F7 /* Bridge.swift in Sources */,
+				C36EBE3425FEF06C0047C6F7 /* UIColor+Colorable.swift in Sources */,
+				C3456FF425A27BE700618271 /* VirtualDotMatrix.cpp in Sources */,
+				C310517025A25A0700D2B5E8 /* VirtualDotMatrixWrapper.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C310515125A2596B00D2B5E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C310515B25A2596B00D2B5E8 /* SwiftGFXWrapperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C37A750A25EAD87F008F249E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C36EBE4A25FEF06C0047C6F7 /* Colorable.swift in Sources */,
+				C37A753B25EAD8B7008F249E /* Adafruit_GFX.cpp in Sources */,
+				C37A753925EAD8B7008F249E /* glcdfont.c in Sources */,
+				C36EBE4125FEF06C0047C6F7 /* DisplayLinkDriver.swift in Sources */,
+				C36EBE3825FEF06C0047C6F7 /* Color+Colorable.swift in Sources */,
+				C37A759325EAD9A6008F249E /* VirtualDotMatrixWrapper.mm in Sources */,
+				C3E7B4E7260FDA87007DE830 /* GFXMatrix+Routines.swift in Sources */,
+				C36EBE3E25FEF06C0047C6F7 /* GFXFrameDriver.swift in Sources */,
+				C36EBE4425FEF06C0047C6F7 /* GFXMatrix.swift in Sources */,
+				C36EBE3B25FEF06C0047C6F7 /* Bridge.swift in Sources */,
+				C36EBE3525FEF06C0047C6F7 /* UIColor+Colorable.swift in Sources */,
+				C37A753325EAD8A9008F249E /* Print.cpp in Sources */,
+				C37A752C25EAD8A5008F249E /* VirtualDotMatrix.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C39F747725EC0FD700B9EACA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C36EBE4B25FEF06C0047C6F7 /* Colorable.swift in Sources */,
+				C39F755325EC11E800B9EACA /* Adafruit_GFX.cpp in Sources */,
+				C39F754D25EC11E400B9EACA /* glcdfont.c in Sources */,
+				C36EBE4225FEF06C0047C6F7 /* DisplayLinkDriver.swift in Sources */,
+				C36EBE3925FEF06C0047C6F7 /* Color+Colorable.swift in Sources */,
+				C39F752A25EC11CC00B9EACA /* Print.cpp in Sources */,
+				C3E7B4E8260FDA87007DE830 /* GFXMatrix+Routines.swift in Sources */,
+				C36EBE3F25FEF06C0047C6F7 /* GFXFrameDriver.swift in Sources */,
+				C36EBE4525FEF06C0047C6F7 /* GFXMatrix.swift in Sources */,
+				C36EBE3C25FEF06C0047C6F7 /* Bridge.swift in Sources */,
+				C36EBE3625FEF06C0047C6F7 /* UIColor+Colorable.swift in Sources */,
+				C39F751E25EC11C300B9EACA /* VirtualDotMatrix.cpp in Sources */,
+				C39F751225EC11B500B9EACA /* VirtualDotMatrixWrapper.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C39F747F25EC0FD700B9EACA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C39F748925EC0FD700B9EACA /* SwiftGFXWrapperMacOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C310515825A2596B00D2B5E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C310514B25A2596B00D2B5E8 /* SwiftGFXWrapper */;
+			targetProxy = C310515725A2596B00D2B5E8 /* PBXContainerItemProxy */;
+		};
+		C39F748625EC0FD700B9EACA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C39F747A25EC0FD700B9EACA /* SwiftGFXWrapperMacOS */;
+			targetProxy = C39F748525EC0FD700B9EACA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C310515E25A2596B00D2B5E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "ARDUINO=100";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/SwiftGFXWrapper/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C310515F25A2596B00D2B5E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "ARDUINO=100";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/SwiftGFXWrapper/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C310516125A2596B00D2B5E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = SwiftGFXWrapper/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tannr.SwiftGFXWrapper;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C310516225A2596B00D2B5E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = SwiftGFXWrapper/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tannr.SwiftGFXWrapper;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C310516425A2596B00D2B5E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SwiftGFXWrapperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tannr.SwiftGFXWrapperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C310516525A2596B00D2B5E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SwiftGFXWrapperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tannr.SwiftGFXWrapperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C37A751325EAD87F008F249E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SwiftGFXWrapperWatchOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tannr.SwiftGFXWrapperWatchOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		C37A751425EAD87F008F249E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SwiftGFXWrapperWatchOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tannr.SwiftGFXWrapperWatchOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		C39F748C25EC0FD700B9EACA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SwiftGFXWrapperMacOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = tannr.SwiftGFXWrapperMacOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C39F748D25EC0FD700B9EACA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SwiftGFXWrapperMacOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = tannr.SwiftGFXWrapperMacOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C39F748E25EC0FD700B9EACA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SwiftGFXWrapperMacOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = tannr.SwiftGFXWrapperMacOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C39F748F25EC0FD700B9EACA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SwiftGFXWrapperMacOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = tannr.SwiftGFXWrapperMacOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C310514625A2596B00D2B5E8 /* Build configuration list for PBXProject "SwiftGFXWrapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C310515E25A2596B00D2B5E8 /* Debug */,
+				C310515F25A2596B00D2B5E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C310516025A2596B00D2B5E8 /* Build configuration list for PBXNativeTarget "SwiftGFXWrapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C310516125A2596B00D2B5E8 /* Debug */,
+				C310516225A2596B00D2B5E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C310516325A2596B00D2B5E8 /* Build configuration list for PBXNativeTarget "SwiftGFXWrapperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C310516425A2596B00D2B5E8 /* Debug */,
+				C310516525A2596B00D2B5E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C37A751525EAD87F008F249E /* Build configuration list for PBXNativeTarget "SwiftGFXWrapperWatchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C37A751325EAD87F008F249E /* Debug */,
+				C37A751425EAD87F008F249E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C39F749025EC0FD700B9EACA /* Build configuration list for PBXNativeTarget "SwiftGFXWrapperMacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C39F748C25EC0FD700B9EACA /* Debug */,
+				C39F748D25EC0FD700B9EACA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C39F749125EC0FD700B9EACA /* Build configuration list for PBXNativeTarget "SwiftGFXWrapperMacOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C39F748E25EC0FD700B9EACA /* Debug */,
+				C39F748F25EC0FD700B9EACA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C310514325A2596B00D2B5E8 /* Project object */;
+}
