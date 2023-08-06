@@ -4,8 +4,7 @@ This is an experimental hack I used to push pixels (or dots, rather) to a 14x28 
 
 I have no immediate plans to continue work on this project or make it "production ready", this repo is just to share some hacks in case it helps curious minds.
 
-![image](https://github.com/twstokes/flipdots-ios/assets/2092798/6b3547cc-438a-45a7-98eb-b8f2eb29a6b8)
-
+![dots-ios](https://github.com/twstokes/flipdots-ios/assets/2092798/e0794297-5664-41f7-9e82-078cc0b065da)
 
 **Some routines it can run:**
 - Freehand drawing
