@@ -1,6 +1,6 @@
 # Flip Dots iOS
 
-This is an experimental hack I used to push pixels (or dots, rather) to a 14x28 Flip Dot board over UDP. See the [original post here](https://www.tannr.com/2021/03/31/flip-dots/). With a few tweaks this project could send any number of pixels with colors included.
+This is an experimental hack I used to push pixels (or dots, rather) to a 14x28 Flip Dot board over UDP. See the [original post](https://www.tannr.com/2021/03/31/flip-dots/) and the [MCU code](https://github.com/twstokes/flipdots) here. With a few tweaks this project could send any number of pixels with colors included.
 
 I have no immediate plans to continue work on this project or make it "production ready", this repo is just to share some hacks in case it helps curious minds.
 
