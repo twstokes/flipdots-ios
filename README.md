@@ -13,7 +13,7 @@ I have no immediate plans to continue work on this project or make it "productio
 - Endless, perfect pong
 - A text scroller
 - A _very experimental_ GPT drawer (which really doesn't work yet)
-- A mocked stock sticker
+- A mocked stock ticker
 - Flipping all the dots from off to on to help with cleaning / calibration
 
 **Other features:**
