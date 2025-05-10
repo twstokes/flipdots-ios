@@ -1,5 +1,5 @@
 //
-//  Routine.swift
+//  GraphicsRoutine.swift
 //  Flipper
 //
 //  Created by Tanner W. Stokes on 3/28/21.
@@ -17,7 +17,7 @@ enum GraphicsRoutine: Hashable {
     case clock
     case perfectPong
     case gpt
-    
+
     var capabilities: [RoutineCapability] {
         switch self {
         case .freehand:

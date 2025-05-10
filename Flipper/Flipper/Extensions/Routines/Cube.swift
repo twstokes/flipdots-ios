@@ -1,5 +1,5 @@
 //
-//  PerfectPong.swift
+//  Cube.swift
 //  Flipper
 //
 //  Created by Tanner W. Stokes on 3/30/21.
@@ -15,19 +15,19 @@ extension GFXMatrix {
         let yOff: Float = 0
         let cSize: Float = 10
         let view_plane: Float = 64
-        let angle = Float.pi/60
+        let angle = Float.pi / 60
 
         var cube3d = [
-          (xOff - cSize, yOff + cSize, zOff - cSize),
-          (xOff + cSize, yOff + cSize, zOff - cSize),
-          (xOff - cSize, yOff - cSize, zOff - cSize),
-          (xOff + cSize, yOff - cSize, zOff - cSize),
-          (xOff - cSize, yOff + cSize, zOff + cSize),
-          (xOff + cSize, yOff + cSize, zOff + cSize),
-          (xOff - cSize, yOff - cSize, zOff + cSize),
-          (xOff + cSize, yOff - cSize, zOff + cSize)
+            (xOff - cSize, yOff + cSize, zOff - cSize),
+            (xOff + cSize, yOff + cSize, zOff - cSize),
+            (xOff - cSize, yOff - cSize, zOff - cSize),
+            (xOff + cSize, yOff - cSize, zOff - cSize),
+            (xOff - cSize, yOff + cSize, zOff + cSize),
+            (xOff + cSize, yOff + cSize, zOff + cSize),
+            (xOff - cSize, yOff - cSize, zOff + cSize),
+            (xOff + cSize, yOff - cSize, zOff + cSize),
         ]
-        
+
         var cube2d = [
             (0, 0),
             (0, 0),
@@ -36,10 +36,9 @@ extension GFXMatrix {
             (0, 0),
             (0, 0),
             (0, 0),
-            (0, 0)
+            (0, 0),
         ]
-        
-        
+
         setFrameBlock {
             xrotate(q: angle)
             zrotate(q: angle)
@@ -81,12 +80,12 @@ extension GFXMatrix {
 //                    break
 //              }
         }
-        
+
         func printcube() {
-            for i in 0..<8 {
-                cube2d[i].0 = Int((cube3d[i].0 * view_plane / cube3d[i].2) + (Float(width())/2))
-                cube2d[i].1 = Int((cube3d[i].1 * view_plane / cube3d[i].2) + (Float(height())/2))
-              }
+            for i in 0 ..< 8 {
+                cube2d[i].0 = Int((cube3d[i].0 * view_plane / cube3d[i].2) + (Float(width()) / 2))
+                cube2d[i].1 = Int((cube3d[i].1 * view_plane / cube3d[i].2) + (Float(height()) / 2))
+            }
 
             fillScreen(0)
             draw_cube()
@@ -96,8 +95,8 @@ extension GFXMatrix {
             var tx: Float
             var ty: Float
             var temp: Float
-            
-            for i in 0..<8 {
+
+            for i in 0 ..< 8 {
                 tx = Float(cube3d[i].0 - xOff)
                 ty = Float(cube3d[i].1 - yOff)
                 temp = tx * cos(q) - ty * sin(q)
@@ -112,8 +111,8 @@ extension GFXMatrix {
             var tx: Float
             var tz: Float
             var temp: Float
-            
-            for i in 0..<8 {
+
+            for i in 0 ..< 8 {
                 tx = Float(cube3d[i].0 - xOff)
                 tz = Float(cube3d[i].2 - zOff)
                 temp = tz * cos(q) - tx * sin(q)
@@ -128,8 +127,8 @@ extension GFXMatrix {
             var ty: Float
             var tz: Float
             var temp: Float
-            
-            for i in 0..<8 {
+
+            for i in 0 ..< 8 {
                 ty = Float(cube3d[i].1 - yOff)
                 tz = Float(cube3d[i].2 - zOff)
                 temp = ty * cos(q) - tz * sin(q)

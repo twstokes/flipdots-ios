@@ -1,5 +1,5 @@
 //
-//  PickerView.swift
+//  TweakBarView.swift
 //  Flipper
 //
 //  Created by Tanner W. Stokes on 9/11/21.
@@ -14,13 +14,13 @@ struct TweakBarView: View {
     @Binding var fps: Float
     @Binding var textInput: String
     @Binding var selectedItem: Int
-    
+
     @State private var showingSettings = false
-    
+
     var body: some View {
         HStack {
             Button(action: {
-                // TODO - handle inversion in freehand drag
+                // TODO: - handle inversion in freehand drag
                 vm.invert()
             }) {
                 Image(systemName: vm.inverted ? "t.circle.fill" : "t.circle")
@@ -41,7 +41,7 @@ struct TweakBarView: View {
                         .frame(width: 25, height: 25)
                 }
             }
-            
+
 //                        if routine.capabilities.contains(.stop) {
 //                            Button(action: {
 //                                vm.stop()
@@ -72,14 +72,14 @@ struct TweakBarView: View {
                 if capabilities.contains(.speed) {
                     Slider(
                         value: $fps,
-                        in: 1...30,
-                        onEditingChanged: { editing in
+                        in: 1 ... 30,
+                        onEditingChanged: { _ in
                             vm.setFrameRate(fps: fps)
                         }
                     ).accentColor(Colors.orange)
                 }
             }
-            
+
             if capabilities.contains(.stringInput) {
                 TextField("", text: $textInput)
                     { _ in } onCommit: {
@@ -103,7 +103,7 @@ struct TweakBarView: View {
                         .frame(width: 25, height: 25)
                 }
             }
-            
+
             if capabilities.contains(.picker) {
                 HStack {
                     Picker("Testing", selection: $selectedItem) {
@@ -115,9 +115,9 @@ struct TweakBarView: View {
                     .background(Color(UIColor.systemBackground))
                 }
             }
-            
+
             Spacer()
-            
+
             Button(action: {
                 showingSettings.toggle()
             }) {

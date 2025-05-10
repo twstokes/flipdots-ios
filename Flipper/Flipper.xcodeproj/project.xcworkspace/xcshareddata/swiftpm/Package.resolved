@@ -1,14 +1,15 @@
 {
+  "originHash" : "4d5b735fb4ce761349124a905586c7ffe2d7474b2b2a43b5c210bec311d7c12f",
   "pins" : [
     {
-      "identity" : "openaiswift",
+      "identity" : "swiftopenai",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/twstokes/OpenAISwift.git",
+      "location" : "https://github.com/jamesrochabrun/SwiftOpenAI",
       "state" : {
-        "branch" : "main",
-        "revision" : "99fcbc1a17b3d0e220566a4c1ef220aa2aa4310c"
+        "revision" : "3be54cb482090a1ff0a826e811f3be3c9ca56344",
+        "version" : "2.9.0"
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

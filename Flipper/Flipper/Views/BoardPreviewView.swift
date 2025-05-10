@@ -1,5 +1,5 @@
 //
-//  BoardPreview.swift
+//  BoardPreviewView.swift
 //  Flipper
 //
 //  Created by Tanner W. Stokes on 11/14/20.
@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BoardPreviewView: View {
     let routine: GraphicsRoutine
-    
+
     var body: some View {
         BoardView(routine: .constant(routine), isPreview: true)
             .contentShape(Rectangle())

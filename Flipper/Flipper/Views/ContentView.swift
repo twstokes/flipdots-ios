@@ -9,11 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     @State var routine: GraphicsRoutine = .freehand
-    
+
     // todo - maybe better as case iterable?
     let routines: [GraphicsRoutine] = [.freehand, .clock, .cube, .perfectPong, .textScroll, .gpt, .stonk(.doge), .flipFlop]
 //    let routines: [GraphicsRoutine] = []
-    
+
     var body: some View {
         ZStack {
             Color.black
@@ -28,7 +28,6 @@ struct ContentView: View {
                         }
                     }
                     .frame(maxHeight: 200)
-                    
                 }
             }.padding()
         }

@@ -6,10 +6,10 @@
 //
 
 import SwiftGFXWrapper
-import OpenAISwift
+import SwiftOpenAI
 
 extension GFXMatrix {
-    func gpt(preview: Bool, query: String = "", buffer: [Dot]? = nil) {
+    func gpt(preview: Bool, query: String = "", buffer _: [Dot]? = nil) {
         if preview {
             centerText(text: "GPT", size: 2, font: .PicopixelFont)
             return
@@ -29,56 +29,36 @@ extension GFXMatrix {
         let configuration = URLSessionConfiguration.default
         configuration.timeoutIntervalForRequest = 120
 
-        let customSession = URLSession(configuration: configuration)
-        let sessionConfig = OpenAISwift.Config(session: customSession)
-        let openAI = OpenAISwift(authToken: openAIToken, config: sessionConfig)
-
+        let service = OpenAIServiceFactory.service(apiKey: openAIToken, configuration: configuration)
+        let parameters = ChatCompletionParameters(
+            messages: [
+                .init(role: .user, content: .text(query)),
+                .init(role: .system, content: .text(
+                    "You are a machine that only outputs a 28 columns x 14 rows array of ones and zeros in JSON format. Your job is to draw low resolution (28x14) monochrome images. The data structure you return is always an array of 14 subarrays containing 28 integers. Each integer is either 0 or 1. The only key in the JSON object is 'image'."
+                ))],
+            model: .custom("gpt-4.1"), responseFormat: .type("json_object"))
         Task {
             do {
-                Swift.print("Sending chat now.")
-
-                /// 5-20-23 - This times out most of the time and has yet to work. Possibly with GPT-4 things will be better.
-                let result = try await openAI.sendCompletion(with: "Draw a \(query) as a 1-bit display with 14 rows and 28 columns. Your response will be the compressed pixel buffer.", model: .gpt3(.davinci), maxTokens: 2000, temperature: 0)
-
-/*
-                /// Chat API
-                let messages: [ChatMessage] = [
-                    ChatMessage(role: .system, content: "You only reply with a JSON array of ones and zeroes. You are a 1-bit display with 14 rows and 28 columns."),
-                    ChatMessage(role: .user, content: "Draw \(query)")
-                ]
-                let result = try await openAI.sendChat(with: messages, model: .chat(.chatgpt), temperature: 0)
-
-                guard let responseText = result.choices?.first?.message.content else {
-                    throw GPTResponseError.noResponseText
-                }
-*/
-                Swift.print(result)
-                guard let responseText = result.choices?.first?.text else {
-                    throw GPTResponseError.noResponseText
+                let chatCompletionObject = try await service.startChat(parameters: parameters)
+                guard let content = chatCompletionObject.choices.first?.message.content else {
+                    Swift.print("No content message found.")
+                    return
                 }
 
-                let parser = GPTResponseParser(response: responseText, matrixPixelTotal: 14*28)
-                let pixels = try parser.parseResponseString()
-                Swift.print(pixels)
+                let parsedMessage = try GPTMessageParser(content: content, cols: width(), rows: height()).parseMessageString()
 
                 await MainActor.run {
                     setFrameBlock(nil)
                     fillScreen(0)
 
-                    for row in 0..<14 {
-                        for col in 0..<28 {
-                            drawPixel(col, y: row, color: pixels[col + (row * 28)])
+                    for (ridx, row) in parsedMessage.enumerated() {
+                        for (cidx, col) in row.enumerated() {
+                            drawPixel(cidx, y: ridx, color: col == 0 ? 0 : 1)
                         }
                     }
-
                 }
-
-
             } catch {
-                Swift.print(error)
-                await MainActor.run {
-                    centerText(text: "error", font: .TomThumbFont)
-                }
+                Swift.print(error.localizedDescription)
             }
         }
     }

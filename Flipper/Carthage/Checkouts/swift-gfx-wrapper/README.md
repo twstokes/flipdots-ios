@@ -10,7 +10,7 @@ This is a Swift -> Objective C -> C / C++ wrapper around the [Adafruit GFX libra
 
 - Prototyping for a device that runs the Adafruit GFX library (e.g. a NeoMatrix)
 - Generating the pixel buffer for a device that you want to push to
-- Playing with pixel graphics in an iOS / macOS / watchOS environment
+- [Playing with pixel graphics](https://github.com/twstokes/flipdots-ios) in an iOS / macOS / watchOS environment
 
 ## Getting started
 
