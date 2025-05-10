@@ -35,8 +35,10 @@ extension GFXMatrix {
                 .init(role: .user, content: .text(query)),
                 .init(role: .system, content: .text(
                     "You are a machine that only outputs a 28 columns x 14 rows array of ones and zeros in JSON format. Your job is to draw low resolution (28x14) monochrome images. The data structure you return is always an array of 14 subarrays containing 28 integers. Each integer is either 0 or 1. The only key in the JSON object is 'image'."
-                ))],
-            model: .custom("gpt-4.1"), responseFormat: .type("json_object"))
+                )),
+            ],
+            model: .custom("gpt-4.1"), responseFormat: .type("json_object")
+        )
         Task {
             do {
                 let chatCompletionObject = try await service.startChat(parameters: parameters)

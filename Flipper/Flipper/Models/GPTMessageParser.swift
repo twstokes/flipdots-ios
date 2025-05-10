@@ -1,5 +1,5 @@
 //
-//  GPTResponseParser.swift
+//  GPTMessageParser.swift
 //  Flipper
 //
 //  Created by Tanner W. Stokes on 5/20/23.

@@ -36,14 +36,14 @@ extension GFXMatrix {
         }
 
 //        MainActor.run {
-            setFrameBlock(nil)
-            fillScreen(0)
+        setFrameBlock(nil)
+        fillScreen(0)
 
-            for (ridx, row) in converted.enumerated() {
-                for (cidx, col) in row.enumerated() {
-                    drawPixel(cidx, y: ridx, color: col == true ? 1 : 0)
-                }
+        for (ridx, row) in converted.enumerated() {
+            for (cidx, col) in row.enumerated() {
+                drawPixel(cidx, y: ridx, color: col == true ? 1 : 0)
             }
+        }
 //        }
     }
 }

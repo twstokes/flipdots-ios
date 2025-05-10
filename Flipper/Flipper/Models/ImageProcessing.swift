@@ -14,11 +14,11 @@ import UIKit
 /// 4. Crop from that point with 2:1 aspect ratio
 /// 5. Downsample/cell-average to 28×14 booleans
 func monochromeBooleanCanvas(from image: UIImage,
-                              thresholdValue: UInt8 = 128) -> [[Bool]]?
+                             thresholdValue: UInt8 = 128) -> [[Bool]]?
 {
     // 1) Get CGImage and dimensions
     guard let cg = image.cgImage else { return nil }
-    let width  = cg.width
+    let width = cg.width
     let height = cg.height
 
     // 2) Render into an 8-bit gray buffer
@@ -55,7 +55,7 @@ func monochromeBooleanCanvas(from image: UIImage,
     }
 
     // 5) Determine maximum crop rectangle from (x0,y0)
-    let maxW = width  - x0
+    let maxW = width - x0
     let maxH = height - y0
     // Want aspect = 2:1 (width:height).
     // If width-limited, height = width/2; else width = height*2
@@ -83,7 +83,7 @@ func monochromeBooleanCanvas(from image: UIImage,
             let srcX = x0 + Int(Double(col) * Double(cropW) / Double(targetCols))
             let srcY = y0 + Int(Double(row) * Double(cropH) / Double(targetRows))
             let pixel = binary[srcY * width + srcX]
-            canvas[row][col] = (pixel == 0)  // black → true
+            canvas[row][col] = (pixel == 0) // black → true
         }
     }
 
