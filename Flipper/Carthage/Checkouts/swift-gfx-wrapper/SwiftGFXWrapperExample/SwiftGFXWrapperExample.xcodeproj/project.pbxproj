@@ -12,9 +12,7 @@
 		C3CF3BAC25EC281A001EDA01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3CF3BAB25EC281A001EDA01 /* Assets.xcassets */; };
 		C3CF3BAF25EC281A001EDA01 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3CF3BAE25EC281A001EDA01 /* Preview Assets.xcassets */; };
 		C3CF3BC825EC2843001EDA01 /* BoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CF3BBF25EC2843001EDA01 /* BoardViewModel.swift */; };
-		C3CF3BC925EC2843001EDA01 /* PixelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CF3BC125EC2843001EDA01 /* PixelView.swift */; };
 		C3CF3BCA25EC2843001EDA01 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CF3BC225EC2843001EDA01 /* BoardView.swift */; };
-		C3E7B4EF260FDBE8007DE830 /* Pixel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E7B4EE260FDBE8007DE830 /* Pixel.swift */; };
 		C3FEEDC425FD1FB70043DCC1 /* SwiftGFXWrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3FEEDC325FD1FB70043DCC1 /* SwiftGFXWrapper.framework */; };
 		C3FEEDC525FD1FB70043DCC1 /* SwiftGFXWrapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C3FEEDC325FD1FB70043DCC1 /* SwiftGFXWrapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -42,10 +40,8 @@
 		C3CF3BAE25EC281A001EDA01 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C3CF3BB025EC281A001EDA01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3CF3BBF25EC2843001EDA01 /* BoardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardViewModel.swift; sourceTree = "<group>"; };
-		C3CF3BC125EC2843001EDA01 /* PixelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixelView.swift; sourceTree = "<group>"; };
 		C3CF3BC225EC2843001EDA01 /* BoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
 		C3CF3BD325EC29C7001EDA01 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		C3E7B4EE260FDBE8007DE830 /* Pixel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pixel.swift; sourceTree = "<group>"; };
 		C3FEEDC325FD1FB70043DCC1 /* SwiftGFXWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftGFXWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -83,7 +79,6 @@
 			children = (
 				C3A7F15B25FE941A009BD84B /* SwiftGFXWrapperExample.entitlements */,
 				C3CF3BA725EC281A001EDA01 /* SwiftGFXWrapperExampleApp.swift */,
-				C3E7B5202610C425007DE830 /* Models */,
 				C3E7B5212610C434007DE830 /* View Models */,
 				C3E7B5222610C43F007DE830 /* Views */,
 				C3CF3BAB25EC281A001EDA01 /* Assets.xcassets */,
@@ -102,14 +97,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		C3E7B5202610C425007DE830 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				C3E7B4EE260FDBE8007DE830 /* Pixel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		C3E7B5212610C434007DE830 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,7 +110,6 @@
 			children = (
 				C3CF3BC225EC2843001EDA01 /* BoardView.swift */,
 				C3CF3BA925EC281A001EDA01 /* ContentView.swift */,
-				C3CF3BC125EC2843001EDA01 /* PixelView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -208,10 +194,8 @@
 			files = (
 				C3CF3BAA25EC281A001EDA01 /* ContentView.swift in Sources */,
 				C3CF3BA825EC281A001EDA01 /* SwiftGFXWrapperExampleApp.swift in Sources */,
-				C3E7B4EF260FDBE8007DE830 /* Pixel.swift in Sources */,
 				C3CF3BC825EC2843001EDA01 /* BoardViewModel.swift in Sources */,
 				C3CF3BCA25EC2843001EDA01 /* BoardView.swift in Sources */,
-				C3CF3BC925EC2843001EDA01 /* PixelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +329,7 @@
 				DEVELOPMENT_TEAM = AE76EV48ND;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftGFXWrapperExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -369,7 +353,7 @@
 				DEVELOPMENT_TEAM = AE76EV48ND;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftGFXWrapperExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
