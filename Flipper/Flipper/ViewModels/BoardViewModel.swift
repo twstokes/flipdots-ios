@@ -121,6 +121,8 @@ class BoardViewModel: ObservableObject {
             matrix.perfectPong()
         case .gpt:
             matrix.gpt(preview: isPreview)
+        case .gptImage:
+            matrix.gptImage()
         }
 
         matrix.step()

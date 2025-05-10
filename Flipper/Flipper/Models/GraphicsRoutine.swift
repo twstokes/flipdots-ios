@@ -17,6 +17,7 @@ enum GraphicsRoutine: Hashable {
     case clock
     case perfectPong
     case gpt
+    case gptImage
 
     var capabilities: [RoutineCapability] {
         switch self {
@@ -34,6 +35,8 @@ enum GraphicsRoutine: Hashable {
             return [.speed, .playPause]
         case .gpt:
             return [.stringInput, .gptSubmit, .clear]
+        case .gptImage:
+            return [.clear]
         }
     }
 }

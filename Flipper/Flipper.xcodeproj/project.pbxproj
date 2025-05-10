@@ -42,6 +42,8 @@
 		C37A75A325EADA6A008F249E /* SwiftGFXWrapper.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C37A74EC25EAD6F8008F249E /* SwiftGFXWrapper.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C37B34FD2560D7F400464D5E /* BoardPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37B34FC2560D7F400464D5E /* BoardPreviewView.swift */; };
 		C390676A2DCED7A20025BA0B /* SwiftOpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = C39067692DCED7A20025BA0B /* SwiftOpenAI */; };
+		C390676C2DCFAA750025BA0B /* ImageProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C390676B2DCFAA6F0025BA0B /* ImageProcessing.swift */; };
+		C390676E2DCFAAE00025BA0B /* GPTImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C390676D2DCFAADC0025BA0B /* GPTImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +117,8 @@
 		C37A74EC25EAD6F8008F249E /* SwiftGFXWrapper.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwiftGFXWrapper.xcframework; path = Carthage/Build/SwiftGFXWrapper.xcframework; sourceTree = "<group>"; };
 		C37A75C825EADD05008F249E /* SwiftGFXWrapperWatchOS.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwiftGFXWrapperWatchOS.xcframework; path = Carthage/Build/SwiftGFXWrapperWatchOS.xcframework; sourceTree = "<group>"; };
 		C37B34FC2560D7F400464D5E /* BoardPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardPreviewView.swift; sourceTree = "<group>"; };
+		C390676B2DCFAA6F0025BA0B /* ImageProcessing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessing.swift; sourceTree = "<group>"; };
+		C390676D2DCFAADC0025BA0B /* GPTImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTImage.swift; sourceTree = "<group>"; };
 		C39F74FE25EC118700B9EACA /* SwiftGFXWrapperMacOS.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwiftGFXWrapperMacOS.xcframework; path = Carthage/Build/SwiftGFXWrapperMacOS.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -165,6 +169,7 @@
 				C321E3E22613DC5F0045B140 /* Stonk.swift */,
 				C31541FE2A1932620082A8C5 /* Text.swift */,
 				C31542002A1940960082A8C5 /* GPT.swift */,
+				C390676D2DCFAADC0025BA0B /* GPTImage.swift */,
 			);
 			path = Routines;
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 				C319EB302610F6C9002044C8 /* Settings.swift */,
 				C319EB362610F708002044C8 /* BoardState.swift */,
 				C3474A6F285F9696001C65BE /* Notifications.swift */,
+				C390676B2DCFAA6F0025BA0B /* ImageProcessing.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -388,6 +394,7 @@
 				C300615626ED4597003B8CFD /* SettingsView.swift in Sources */,
 				C319EB2E2610CA30002044C8 /* Colors.swift in Sources */,
 				C321E3DF2613DC580045B140 /* Clock.swift in Sources */,
+				C390676C2DCFAA750025BA0B /* ImageProcessing.swift in Sources */,
 				C33D4456255F9C120057684D /* BoardView.swift in Sources */,
 				C31541FF2A1932620082A8C5 /* Text.swift in Sources */,
 				C33ED463260042CD008599BF /* Dot.swift in Sources */,
@@ -398,6 +405,7 @@
 				C37A740025EAA29F008F249E /* BoardViewModel.swift in Sources */,
 				C3474A70285F9696001C65BE /* Notifications.swift in Sources */,
 				C319EB372610F708002044C8 /* BoardState.swift in Sources */,
+				C390676E2DCFAAE00025BA0B /* GPTImage.swift in Sources */,
 				C319EB312610F6C9002044C8 /* Settings.swift in Sources */,
 				C321E3D72613DC150045B140 /* BouncyDot.swift in Sources */,
 				C37B34FD2560D7F400464D5E /* BoardPreviewView.swift in Sources */,
