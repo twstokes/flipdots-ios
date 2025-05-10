@@ -16,8 +16,8 @@
 		C31541FF2A1932620082A8C5 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31541FE2A1932620082A8C5 /* Text.swift */; };
 		C31542012A1940960082A8C5 /* GPT.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31542002A1940960082A8C5 /* GPT.swift */; };
 		C31542092A1963290082A8C5 /* GPTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31542082A1963290082A8C5 /* GPTTests.swift */; };
-		C315420C2A196A710082A8C5 /* GPTResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C315420B2A196A710082A8C5 /* GPTResponseParser.swift */; };
-		C315420D2A196A730082A8C5 /* GPTResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C315420B2A196A710082A8C5 /* GPTResponseParser.swift */; };
+		C315420C2A196A710082A8C5 /* GPTMessageParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C315420B2A196A710082A8C5 /* GPTMessageParser.swift */; };
+		C315420D2A196A730082A8C5 /* GPTMessageParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C315420B2A196A710082A8C5 /* GPTMessageParser.swift */; };
 		C319EB2E2610CA30002044C8 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319EB2D2610CA30002044C8 /* Colors.swift */; };
 		C319EB312610F6C9002044C8 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319EB302610F6C9002044C8 /* Settings.swift */; };
 		C319EB342610F6EF002044C8 /* GraphicsRoutine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319EB332610F6EF002044C8 /* GraphicsRoutine.swift */; };
@@ -87,7 +87,7 @@
 		C31542002A1940960082A8C5 /* GPT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPT.swift; sourceTree = "<group>"; };
 		C31542042A1944420082A8C5 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		C31542082A1963290082A8C5 /* GPTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTTests.swift; sourceTree = "<group>"; };
-		C315420B2A196A710082A8C5 /* GPTResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTResponseParser.swift; sourceTree = "<group>"; };
+		C315420B2A196A710082A8C5 /* GPTMessageParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTMessageParser.swift; sourceTree = "<group>"; };
 		C319EB2D2610CA30002044C8 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		C319EB302610F6C9002044C8 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		C319EB332610F6EF002044C8 /* GraphicsRoutine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphicsRoutine.swift; sourceTree = "<group>"; };
@@ -173,7 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				C33ED462260042CD008599BF /* Dot.swift */,
-				C315420B2A196A710082A8C5 /* GPTResponseParser.swift */,
+				C315420B2A196A710082A8C5 /* GPTMessageParser.swift */,
 				C319EB332610F6EF002044C8 /* GraphicsRoutine.swift */,
 				C319EB2D2610CA30002044C8 /* Colors.swift */,
 				C319EB302610F6C9002044C8 /* Settings.swift */,
@@ -379,7 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C319EB342610F6EF002044C8 /* GraphicsRoutine.swift in Sources */,
-				C315420C2A196A710082A8C5 /* GPTResponseParser.swift in Sources */,
+				C315420C2A196A710082A8C5 /* GPTMessageParser.swift in Sources */,
 				C321E3E32613DC5F0045B140 /* Stonk.swift in Sources */,
 				C321E3CB2613DA760045B140 /* PerfectPong.swift in Sources */,
 				C33D4425255F9BE30057684D /* ContentView.swift in Sources */,
@@ -410,7 +410,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C300E9B526120D8C00D91B41 /* DotPayloadTests.swift in Sources */,
-				C315420D2A196A730082A8C5 /* GPTResponseParser.swift in Sources */,
+				C315420D2A196A730082A8C5 /* GPTMessageParser.swift in Sources */,
 				C31542092A1963290082A8C5 /* GPTTests.swift in Sources */,
 				C300E9B026120D7600D91B41 /* UDPClient.swift in Sources */,
 				C33D4435255F9BE70057684D /* FlipperTests.swift in Sources */,

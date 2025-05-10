@@ -10,6 +10,7 @@ import Foundation
 import Network
 
 struct UDPClient {
+    // todo - make this config global. It should also be passed to the GPT prompt.
     static let panels = 2
     static let colsPerPanel = 28
     static let dotsPerCol = 7
