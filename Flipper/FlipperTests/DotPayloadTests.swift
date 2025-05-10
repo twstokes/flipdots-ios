@@ -8,7 +8,6 @@
 import XCTest
 
 class DotPayloadTests: XCTestCase {
-
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -21,26 +20,24 @@ class DotPayloadTests: XCTestCase {
         let colsPerPanel = 28
         let dotsPerCol = 7
         // asuming 28 columns, 7 dots per column
-        let dots = (0..<colsPerPanel*dotsPerCol).map { _ in Dot() }
+        let dots = (0 ..< colsPerPanel * dotsPerCol).map { _ in Dot() }
         // flip the top left
         dots[0].flipped = true
         // flip the bottom right
-        dots[dotsPerCol*colsPerPanel-1].flipped = true
+        dots[dotsPerCol * colsPerPanel - 1].flipped = true
         // flip the bottom left
-        dots[colsPerPanel*(dotsPerCol-1)].flipped = true
-        
+        dots[colsPerPanel * (dotsPerCol - 1)].flipped = true
+
         let payload = dots.toPayload(panels: 1, colsPerPanel: colsPerPanel, dotsPerCol: dotsPerCol)
         // top and bottom dots flipped
         XCTAssertEqual(payload[0], 65)
         XCTAssertEqual(payload[colsPerPanel - 1], 64)
- 
     }
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
-        self.measure {
+        measure {
             // Put the code you want to measure the time of here.
         }
     }
-
 }

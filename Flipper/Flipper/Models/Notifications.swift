@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct Notifications {
+enum Notifications {
     static let networkChanged = "network_changed"
 }

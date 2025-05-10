@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct Colors {
+enum Colors {
     static let orange = Color(hue: 0.05, saturation: 1, brightness: 1)
     static let darkDray = Color(white: 0.1)
 }

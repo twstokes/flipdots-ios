@@ -9,12 +9,12 @@ import SwiftUI
 
 struct SettingsView: View {
     @AppStorage("networkEnabled") var networkEnabled = false
-    
-    // TODO
+
+    // TODO:
     // - IP address
     // - Board size
     // - Multicolor (Flipdot vs LEDs)
-    
+
     var body: some View {
         Group {
             Toggle("Enable network", isOn: $networkEnabled)
