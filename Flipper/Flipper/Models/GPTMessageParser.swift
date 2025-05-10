@@ -9,7 +9,7 @@ import Foundation
 
 /// A type to handle parsing the expected responses from OpenAI
 struct GPTMessageParser {
-    let message: String
+    let content: String
     let cols: Int
     let rows: Int
 
@@ -20,7 +20,7 @@ struct GPTMessageParser {
     func parseMessageString() throws -> [[Int]] {
         /// Note: The decoder accounts for whitespace and newlines, so no need to trim them
         let decoder = JSONDecoder()
-        guard let data = message.data(using: .utf8) else {
+        guard let data = content.data(using: .utf8) else {
             throw GPTResponseParserError.dataConversionFailed
         }
         let decoded = try decoder.decode(ResponseMessage.self, from: data)
