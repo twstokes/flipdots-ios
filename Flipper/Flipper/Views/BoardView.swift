@@ -74,7 +74,7 @@ struct BoardView: View {
                                 if let dot = vm.getPixelAt(row: row, col: col) {
                                     DotView(
                                         dot: dot,
-                                        readOnly: vm.isPreview,
+                                        readOnly: vm.isPreview || !routine.capabilities.contains(.touchInput),
                                         dragLocation: vm.isPreview ? .constant(.zero) : $dragLocation
                                     )
                                     .contentShape(Rectangle())

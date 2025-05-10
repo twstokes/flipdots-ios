@@ -23,7 +23,7 @@ enum GraphicsRoutine: Hashable {
     var capabilities: [RoutineCapability] {
         switch self {
         case .freehand:
-            return [.clear]
+            return [.clear, .touchInput]
         case .textScroll:
             return [.stringInput, .playPause, .speed]
         case .bouncyDot, .cube, .flipFlop:
@@ -43,6 +43,7 @@ enum GraphicsRoutine: Hashable {
 }
 
 enum RoutineCapability {
+    case touchInput
     case stringInput
     case playPause
     case stop
