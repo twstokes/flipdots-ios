@@ -45,17 +45,10 @@ struct BoardView: View {
     }
 
     private var dragMask: GestureMask {
-        guard !vm.isPreview else {
+        guard !vm.isPreview, routine.capabilities.contains(.touchInput) else {
             return .subviews
         }
-
-        switch routine {
-        case .freehand:
-            // only (currently) allow dragging for freehand
-            return .all
-        default:
-            return .subviews
-        }
+        return .all
     }
 
     // TODO: - hone in on the dot pitch by looking at the real board
