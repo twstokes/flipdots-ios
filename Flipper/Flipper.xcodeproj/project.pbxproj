@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 53;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,7 +15,6 @@
 		C300E9B526120D8C00D91B41 /* DotPayloadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C300E9B426120D8C00D91B41 /* DotPayloadTests.swift */; };
 		C31541FF2A1932620082A8C5 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31541FE2A1932620082A8C5 /* Text.swift */; };
 		C31542012A1940960082A8C5 /* GPT.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31542002A1940960082A8C5 /* GPT.swift */; };
-		C31542072A194F4F0082A8C5 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = C31542062A194F4F0082A8C5 /* OpenAISwift */; };
 		C31542092A1963290082A8C5 /* GPTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31542082A1963290082A8C5 /* GPTTests.swift */; };
 		C315420C2A196A710082A8C5 /* GPTResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C315420B2A196A710082A8C5 /* GPTResponseParser.swift */; };
 		C315420D2A196A730082A8C5 /* GPTResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C315420B2A196A710082A8C5 /* GPTResponseParser.swift */; };
@@ -42,6 +41,7 @@
 		C37A75A225EADA6A008F249E /* SwiftGFXWrapper.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37A74EC25EAD6F8008F249E /* SwiftGFXWrapper.xcframework */; };
 		C37A75A325EADA6A008F249E /* SwiftGFXWrapper.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C37A74EC25EAD6F8008F249E /* SwiftGFXWrapper.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C37B34FD2560D7F400464D5E /* BoardPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37B34FC2560D7F400464D5E /* BoardPreviewView.swift */; };
+		C390676A2DCED7A20025BA0B /* SwiftOpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = C39067692DCED7A20025BA0B /* SwiftOpenAI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,7 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C31542072A194F4F0082A8C5 /* OpenAISwift in Frameworks */,
+				C390676A2DCED7A20025BA0B /* SwiftOpenAI in Frameworks */,
 				C37A75A225EADA6A008F249E /* SwiftGFXWrapper.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +288,7 @@
 			);
 			name = Flipper;
 			packageProductDependencies = (
-				C31542062A194F4F0082A8C5 /* OpenAISwift */,
+				C39067692DCED7A20025BA0B /* SwiftOpenAI */,
 			);
 			productName = Flipper;
 			productReference = C33D441F255F9BE30057684D /* Flipper.app */;
@@ -342,7 +342,7 @@
 			);
 			mainGroup = C33D4416255F9BE30057684D;
 			packageReferences = (
-				C31542052A194F4F0082A8C5 /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+				C39067682DCED7A20025BA0B /* XCRemoteSwiftPackageReference "SwiftOpenAI" */,
 			);
 			productRefGroup = C33D4420255F9BE30057684D /* Products */;
 			projectDirPath = "";
@@ -679,21 +679,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		C31542052A194F4F0082A8C5 /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+		C39067682DCED7A20025BA0B /* XCRemoteSwiftPackageReference "SwiftOpenAI" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/twstokes/OpenAISwift.git";
+			repositoryURL = "https://github.com/jamesrochabrun/SwiftOpenAI";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C31542062A194F4F0082A8C5 /* OpenAISwift */ = {
+		C39067692DCED7A20025BA0B /* SwiftOpenAI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C31542052A194F4F0082A8C5 /* XCRemoteSwiftPackageReference "OpenAISwift" */;
-			productName = OpenAISwift;
+			package = C39067682DCED7A20025BA0B /* XCRemoteSwiftPackageReference "SwiftOpenAI" */;
+			productName = SwiftOpenAI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
