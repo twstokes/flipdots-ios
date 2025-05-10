@@ -10,15 +10,18 @@ import SwiftOpenAI
 import UIKit
 
 extension GFXMatrix {
-    func gptImage() {
+    func gptImage(image: UIImage? = nil) {
         setFrameBlock(nil)
         fillScreen(0)
 
-        guard let mountain = UIImage(named: "mountain") else {
-            Swift.print("Failed to load mountain image")
+        let imageToProcess = image ?? UIImage(named: "mountain")
+
+        guard let imageToProcess else {
+            Swift.print("Failed to load image")
             return
         }
-        guard let converted = monochromeBooleanCanvas(from: mountain) else {
+
+        guard let converted = monochromeBooleanCanvas(from: imageToProcess) else {
             Swift.print("Failed to convert to boolean canvas")
             return
         }

@@ -82,7 +82,14 @@ struct BoardView: View {
                             }
                         }
                     }
-                }.gesture(dragGesture, including: dragMask)
+                }
+                .gesture(dragGesture, including: dragMask)
+                .dropDestination(for: Data.self) { items, location in
+                    guard let item = items.first else { return false }
+                    guard let uiImage = UIImage(data: item) else { return false }
+                    routine = .gptImage(uiImage)
+                    return true
+                }
 
                 if !vm.isPreview {
                     TweakBarView(vm: vm, capabilities: routine.capabilities, fps: $fps, textInput: $textInput, selectedItem: $selectedItem)
