@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 enum GraphicsRoutine: Hashable {
     case freehand
@@ -17,11 +18,12 @@ enum GraphicsRoutine: Hashable {
     case clock
     case perfectPong
     case gpt
+    case gptImage(UIImage?)
 
     var capabilities: [RoutineCapability] {
         switch self {
         case .freehand:
-            return [.clear]
+            return [.clear, .touchInput]
         case .textScroll:
             return [.stringInput, .playPause, .speed]
         case .bouncyDot, .cube, .flipFlop:
@@ -34,11 +36,14 @@ enum GraphicsRoutine: Hashable {
             return [.speed, .playPause]
         case .gpt:
             return [.stringInput, .gptSubmit, .clear]
+        case .gptImage:
+            return [.clear]
         }
     }
 }
 
 enum RoutineCapability {
+    case touchInput
     case stringInput
     case playPause
     case stop

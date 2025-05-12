@@ -45,17 +45,10 @@ struct BoardView: View {
     }
 
     private var dragMask: GestureMask {
-        guard !vm.isPreview else {
+        guard !vm.isPreview, routine.capabilities.contains(.touchInput) else {
             return .subviews
         }
-
-        switch routine {
-        case .freehand:
-            // only (currently) allow dragging for freehand
-            return .all
-        default:
-            return .subviews
-        }
+        return .all
     }
 
     // TODO: - hone in on the dot pitch by looking at the real board
@@ -74,7 +67,7 @@ struct BoardView: View {
                                 if let dot = vm.getPixelAt(row: row, col: col) {
                                     DotView(
                                         dot: dot,
-                                        readOnly: vm.isPreview,
+                                        readOnly: vm.isPreview || !routine.capabilities.contains(.touchInput),
                                         dragLocation: vm.isPreview ? .constant(.zero) : $dragLocation
                                     )
                                     .contentShape(Rectangle())
@@ -82,7 +75,14 @@ struct BoardView: View {
                             }
                         }
                     }
-                }.gesture(dragGesture, including: dragMask)
+                }
+                .gesture(dragGesture, including: dragMask)
+                .dropDestination(for: Data.self) { items, location in
+                    guard let item = items.first else { return false }
+                    guard let uiImage = UIImage(data: item) else { return false }
+                    routine = .gptImage(uiImage)
+                    return true
+                }
 
                 if !vm.isPreview {
                     TweakBarView(vm: vm, capabilities: routine.capabilities, fps: $fps, textInput: $textInput, selectedItem: $selectedItem)

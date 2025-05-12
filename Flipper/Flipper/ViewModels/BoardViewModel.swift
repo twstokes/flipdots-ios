@@ -41,7 +41,9 @@ class BoardViewModel: ObservableObject {
 
         initializeClient()
 
-        NotificationCenter.default.addObserver(self, selector: #selector(networkChanged), name: Notification.Name(Notifications.networkChanged), object: nil)
+        if !isPreview {
+            NotificationCenter.default.addObserver(self, selector: #selector(networkChanged), name: Notification.Name(Notifications.networkChanged), object: nil)
+        }
 
         driver.setStepBlock {
             self.matrix.step()
@@ -121,6 +123,8 @@ class BoardViewModel: ObservableObject {
             matrix.perfectPong()
         case .gpt:
             matrix.gpt(preview: isPreview)
+        case .gptImage(let image):
+            matrix.gptImage(image: image)
         }
 
         matrix.step()
